@@ -1,0 +1,42 @@
+/*
+input,
+textarea {
+  @include input-placeholder {
+    color: $grey;
+  }
+}
+*/
+.header .navigation {
+  text-align: right;
+  background-color: #fff;
+}
+@media screen and (min-width: 992px) {
+  .header .navigation .navbar {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+    padding: 5px 125px;
+  }
+}
+
+/*# sourceMappingURL=navigation.css.map */

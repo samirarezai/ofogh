@@ -1,0 +1,18 @@
+@import "../mixins";
+@import "../variable";
+.inner {
+  position: absolute;
+  color: #fff;
+  background-color: rgba(255,255,255,.2);
+  z-index: 1040;
+padding: 30px;
+  text-align: center;
+ width: 50%;
+.box-text{
+  .title{
+line-height: 1.5rem;
+
+    margin: 20px 0;
+  }
+}
+}
