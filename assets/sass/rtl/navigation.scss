@@ -3,8 +3,12 @@
 .header{
 width: 100%;
   height: 100vh;
-  background: url("../img/header.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/header.jpg");
   background-size: cover;
+
   position: relative;
   @include flex(row,nowrap,center,center);
   &:before{
@@ -157,13 +161,21 @@ font-size: $small-font;
   padding: 2px 15px;
   .navbar-nav{
     .nav-item{
+      @include media-max($L){
+        font-size: .9rem;
+        font-weight: 500;
+        border-bottom: 1px solid $color-violet-rgba;
+        &:last-child{
+          border-bottom: 0px solid $color-violet;
+        }
+      }
       .nav-link{
         color: #000;
         @include transition;
       }
       .active{
         @include transition;
-        color: red;
+        color: $color-violet;
       }
     }
   }
@@ -189,4 +201,9 @@ font-size: $small-font;
     }
   }
   }
+}
+.next-padding{
+  width: 100%;
+  padding-top: 30px;
+  background-color: green;
 }

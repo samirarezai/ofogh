@@ -57,8 +57,8 @@
 
 
 
-@mixin font-source-sans($size: false, $colour: false, $weight: false,  $lh: false) {
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+@mixin font-source-sans($font: false,$size: false, $colour: false, $weight: false,  $lh: false) {
+  font-family: $font;
   @if $size { font-size: $size; }
   @if $colour { color: $colour; }
   @if $weight { font-weight: $weight; }
@@ -97,7 +97,7 @@ textarea {
     @content;
   }
 }
-@mixin gradient($start-color, $end-color, $orientation) {
+@mixin gradient( $orientation,$start-color, $end-color) {
   background: $start-color;
   @if $orientation == 'vertical' {
     background: -webkit-linear-gradient(top, $start-color, $end-color);

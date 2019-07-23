@@ -1,0 +1,52 @@
+@import "../mixins";
+@import "../variable";
+
+.footer{
+width: 100%;
+  height: 500px;
+  background-color: $color-dark;
+  position: relative;
+  padding-top: 30px;
+  @include flex(column,nowrap,center,flex-start);
+  &:before{
+    content: '';
+    width:50%;
+    height:150px;
+    background-color: #fff;
+    border:1px solid #3a3e3d3b;
+    border-width:0 0 10px 0;
+    -webkit-border-radius:0% 0% 135% 0% / 0% 0% 65% 0%;
+    -moz-border-radius:0% 0% 135% 0% / 0% 0% 65% 0%;
+    border-radius:0% 0% 135% 0% / 0% 0% 65% 0%;
+    position: absolute;
+    left: 0;
+top:0;
+    z-index: 10;
+  }
+  &:after{
+    content: '';
+    width:50%;
+    height:150px;
+    background-color: #fff;
+    border:1px solid #3a3e3d3b;
+    border-width:0 0 13px 0;
+    -webkit-border-radius:0% 0% 135% 0% / 0% 0% 65% 0%;
+    -moz-border-radius:0% 0% 135% 0% / 0% 0% 65% 0%;
+    border-radius:0% 0% 135% 0% / 0% 0% 65% 0%;
+    position: absolute;
+    right: 0;
+  top:0;
+    transform: rotateY(180deg);
+  }
+  .next-padding-footer{
+    width: 100%;
+    padding-top: 65px;
+  }
+  .btn-to-top{
+    @include flex(row,nowrap,center,center);
+    img{
+      max-width: 40px;
+
+    }
+  }
+}
