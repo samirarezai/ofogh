@@ -1,0 +1,111 @@
+@import "../mixins";
+@import "../variable";
+.connection{
+  width: 100%;
+  border-bottom: 1px solid #464646eb;
+  padding-bottom: 20px;
+
+  .head{
+  .title {
+    text-align: center;
+    font-family: Shabnam;
+    margin: 50px 0;
+
+    @include font-source-sans($big-font, #fff, 500, 2.1);
+    position: relative;
+    &:after {
+
+      content: '';
+      width: 100px;
+
+
+      height: 2px;
+      @include gradient(horizontal, transparent, #fcaf17);
+      position: absolute;
+      bottom: 0px;
+      right: calc(50% - 42px);
+
+    }
+  }
+  }
+    .form-group-inline{
+      @include media-min($M){
+
+@include flex(row,nowrap,center,space-between);
+
+      }
+
+      .form-group{
+        @include transition;
+        @include media-min($M){
+
+          flex-basis: 500px;
+        }
+        .form-control{
+          background-color: transparent;
+          @include transition;
+          border: 1px solid transparent;
+          border-bottom: 1px solid #ffffff52;
+
+          border-radius: 0;
+          color: #fff;
+
+          &:focus{
+            @include transition;
+            color: #fff;
+            background-color: transparent;
+            border-color: transparent;
+            outline: 0;
+            box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+          }
+          &:hover{
+            @include transition;
+            border: 1px solid #ffffff52;
+          }
+        }
+
+
+        }
+      }
+  .form-group{
+.form-control{
+  background-color: transparent;
+  @include transition;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ffffff52;
+
+  border-radius: 0;
+  color: #fff;
+  &:focus{
+    @include transition;
+    @include transition;
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+  }
+  &:hover{
+    @include transition;
+
+    border: 1px solid #ffffff52;
+  }
+}
+  }
+  .btn{
+    text-align: center;
+    background-color:$color-yellow;
+
+    color: #fff;
+
+    font-size: .9rem;
+    padding: 10px 30px;
+    display:flex;
+    border-radius: 20px;
+margin: 10px auto;
+
+  }
+
+    }
+
+

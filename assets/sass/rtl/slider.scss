@@ -1,0 +1,152 @@
+@import "../mixins";
+@import "../variable";
+
+.slider {
+  width: 100%;
+  background-color: #ae55a129;
+  text-align: center;
+  position: relative;
+
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../img/curve1.svg) no-repeat center center;
+    background-size: cover;
+    height: 45px;
+    width: 100%;
+    bottom: -2px;
+    right: 0;
+    z-index: 1040;
+
+    @include media-min($S) {
+
+
+      height: 80px;
+    }
+    @include media-min($L) {
+      height: 150px;
+    }
+  }
+
+  .container {
+    .head {
+      .title {
+        font-family: Shabnam;
+
+        margin: 50px 0 15px;
+        @include font-source-sans($big-font, #631f5b, 600, 2.1);
+
+        position: relative;
+
+        &:after {
+
+          content: '';
+          width: 100px;
+
+          height: 2px;
+          @include gradient(horizontal, transparent, #fcaf17);
+          position: absolute;
+          bottom: 0px;
+          right: calc(50% - 42px);
+
+        }
+      }
+    }
+
+    .carousel {
+      height: 300px;
+
+      .carousel-indicators {
+
+        left: 40px;
+        bottom: 60px;
+
+        li {
+          border-radius: 50%;
+          @include transition;
+        }
+
+        .active {
+          background-color: $color-yellow;
+          @include transition;
+        }
+
+      }
+
+      .carousel-inner {
+        padding: 5px;
+
+        .carousel-item {
+          color: #444;
+
+          .row {
+            .box-col {
+              margin-top: 25px;
+              @include flex(column, nowrap, center, center);
+              height: 100%;
+.question{
+  font-family: Shabnam;
+  margin-bottom: 10px;
+  @include font-source-sans(1.1rem,#631f5b,600,1.5rem);
+}
+              .answer{
+                @include font-source-sans(1rem, #3a3e3d,400,1.7rem);
+              }
+            }
+          }
+
+        }
+      }
+
+      .carousel-control-prev {
+        left: -150px;
+        bottom: 50%;
+        @include media-min($S) {
+          left: -57px;
+        }
+        @include media-min($M) {
+          left: -100px;
+        }
+
+        .carousel-control-prev-icon {
+          background-image: url("../img/left.svg");
+
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      .carousel-control-next {
+        bottom: 50%;
+        right: -150px;
+
+
+        @include media-min($S) {
+          right: -57px;
+        }
+        @include media-min($M) {
+
+          right: -100px;
+
+
+        }
+
+
+        .carousel-control-next-icon {
+          background-image: url("../img/left.svg");
+          @include transform(180deg);
+
+
+          width: 30px;
+          height: 30px;
+
+        }
+      }
+
+
+    }
+  }
+}

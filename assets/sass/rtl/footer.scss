@@ -2,51 +2,55 @@
 @import "../variable";
 
 .footer{
+  color: #fff;
 width: 100%;
-  height: 500px;
   background-color: $color-dark;
   position: relative;
-  padding-top: 30px;
+  text-align: right;
   @include flex(column,nowrap,center,flex-start);
-  &:before{
-    content: '';
-    width:50%;
-    height:150px;
-    background-color: #fff;
-    border:1px solid #3a3e3d3b;
-    border-width:0 0 10px 0;
-    -webkit-border-radius:0% 0% 135% 0% / 0% 0% 65% 0%;
-    -moz-border-radius:0% 0% 135% 0% / 0% 0% 65% 0%;
-    border-radius:0% 0% 135% 0% / 0% 0% 65% 0%;
-    position: absolute;
-    left: 0;
-top:0;
-    z-index: 10;
-  }
-  &:after{
-    content: '';
-    width:50%;
-    height:150px;
-    background-color: #fff;
-    border:1px solid #3a3e3d3b;
-    border-width:0 0 13px 0;
-    -webkit-border-radius:0% 0% 135% 0% / 0% 0% 65% 0%;
-    -moz-border-radius:0% 0% 135% 0% / 0% 0% 65% 0%;
-    border-radius:0% 0% 135% 0% / 0% 0% 65% 0%;
-    position: absolute;
-    right: 0;
-  top:0;
-    transform: rotateY(180deg);
-  }
-  .next-padding-footer{
-    width: 100%;
-    padding-top: 65px;
-  }
+   /* &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      background: url(../img/curve1.svg) no-repeat center center;
+      background-size: cover;
+      height: 45px;
+      width:100%;
+
+      top:-2px;
+      right: 0;
+      z-index: 1040;
+      @include transform(180deg);
+
+      @include media-min($S){
+        height: 80px;
+      }
+      @include media-min($L){
+        height: 150px;
+      }
+    }*/
+.info{
+  margin: 30px 0;
+
+}
   .btn-to-top{
+    margin: 10px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    @include transform(90deg);
     @include flex(row,nowrap,center,center);
+    z-index: 1050;
     img{
       max-width: 40px;
 
     }
+
   }
+
 }
+
+
+
+

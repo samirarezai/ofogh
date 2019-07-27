@@ -8,7 +8,7 @@
   text-align: center;
   padding: 5px;
   height: auto;
-  font-family:IRANSans;
+  font-family:IRANSans,Shabnam;
   @include flex(column,nowrap,center,center);
   @include media-min($M){
     padding: 20px;
@@ -27,19 +27,19 @@
 .box-text{
   position:relative ;
   .title{
+    font-family: Shabnam,IRANSans;
 margin: 0 0 30px;
-    @include font-source-sans( Shabnam,2.8rem, #fff, 600, 3.5rem);
+    @include font-source-sans(2.8rem, #fff, 600, 3.5rem);
     @include media-max($M){
 
-      @include font-source-sans(shabnam,2rem, #fff, 500, 3rem);
+      @include font-source-sans(2rem, #fff, 500, 3rem);
     }
   }
   .caption{
     @include font-source-sans($small-font, #ffffffd9, 400,  1.5rem);
-    font-family: IRANSans;
     @include media-max($M){
 
-      @include font-source-sans(IRANSans,.8rem, #fff, 300, 1rem);
+      @include font-source-sans(.8rem, #fff, 300, 1rem);
     }
   }
   &:after{

@@ -31,11 +31,12 @@
   -ms-flex-pack: $justify;
 }
 @mixin transition{
-  -webkit-transition:all .3s,width .3s,opacity 0s,border .01s,margin 0s,background .3s;
-  -moz-transition: all .3s,width .3s,opacity 0s,border .01s,margin 0s,background .3s;
-  -ms-transition:all .3s,width .3s,opacity 0s,border .01s,margin 0s,background .3s;
-  -o-transition: all .3s,width .3s,opacity 0s,border .01s,margin 0s,background .3s;
-  transition: all .3s,width .3s,opacity 0s,border .01s,margin 0s,background .3s;
+  -webkit-transition:all .3s,width .3s,opacity 0s,border .1s,margin 0s,background .3s;
+  -moz-transition: all .3s,width .3s,opacity 0s,border .1s,margin 0s,background .3s;
+  -ms-transition:all .3s,width .3s,opacity 0s,border .1s,margin 0s,background .3s;
+  -o-transition: all .3s,width .3s,opacity 0s,border .1s,margin 0s,background .3s;
+  transition: all .3s,width .3s,opacity 0s,border .1s,margin 0s,background .3s;
+
 }
 @mixin transform($degree){
   -moz-transform: rotate($degree);
@@ -57,8 +58,7 @@
 
 
 
-@mixin font-source-sans($font: false,$size: false, $colour: false, $weight: false,  $lh: false) {
-  font-family: $font;
+@mixin font-source-sans($size: false, $colour: false, $weight: false,  $lh: false) {
   @if $size { font-size: $size; }
   @if $colour { color: $colour; }
   @if $weight { font-weight: $weight; }
@@ -109,4 +109,14 @@ textarea {
     background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
     background: radial-gradient(ellipse at center, $start-color, $end-color);
   }
+}
+@mixin radius($border-radius){
+  -webkit-border-radius:$border-radius;
+  -moz-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+@mixin box-shadow($value) {
+    -webkit-box-shadow:$value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
 }

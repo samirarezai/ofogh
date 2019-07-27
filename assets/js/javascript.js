@@ -5,12 +5,12 @@ $(document).ready(function(){
     $('body').scrollspy({target: ".navbar", offset: 50});
 
     // Add smooth scrolling on all links inside the navbar
-    $(".nav-item .nav-link").on('click', function(event) {
+   $(".nav-item .nav-link").on('click', function(event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
             // Prevent default anchor click behavior
             event.preventDefault();
-            $('.active').removeClass('active');
+            $('.actived').removeClass('actived');
             // Store hash
             var hash = this.hash;
 
@@ -22,15 +22,15 @@ $(document).ready(function(){
 
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
-                $(this).parent().addClass('active');
+                $(this).parent().addClass('actived');
             });
 
 
 
         }  // End if
     });
-    $('.btn-to-top .top').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 600);
+    $("#top-btn").click(function(){
+       $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
     });
 
