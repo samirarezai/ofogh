@@ -1,0 +1,118 @@
+@import "../mixins";
+@import "../variable";
+.all-modal{
+z-index: 1080;
+.modal{
+  direction: ltr;
+  text-align: right;
+  z-index: 1080;
+  border: 0;
+background-color: #fff;
+.modal-dialog{
+  width: 100%;
+   max-width: 100%;
+  min-width: 100%;
+  margin: 0;
+  min-height: 100vh;
+  .modal-content{
+    border: 0;
+    @include radius(0);
+    min-height: 100vh;
+    background: url("../img/dotss.png") repeat;
+    .modal-body{
+      direction: rtl;
+      padding: 0;
+      .cards{
+        margin-top: 50px;
+        background: transparent;
+padding-bottom: 250px;
+        .cover {
+          @include media-max($M) {
+            display: block;
+          }
+        }
+        .pack{
+          @include media-max($M){
+            position: absolute;
+          }
+          .box-col{
+            border: 0;
+            .text{
+              padding: 5px;
+             width: 100%;
+             min-height: 300px;
+              margin: 0;
+             @include flex(column,nowrap,center,center);
+              @include media-min($M){
+                padding: 15px;
+              }
+             .image{
+               width: 100px;
+               height: 100px;
+               background-color: $color-yellow;
+               @include radius(50%);
+               padding: 10px;
+               img{
+                 max-width: 60px;
+                 width: 100%;
+                 height: auto;
+               }
+             }
+.title{
+
+  margin-top: 20px;
+  font-family: Shabnam;
+
+  margin-bottom: 10px;
+  @include font-source-sans(2rem,#631f5b,600,2.3rem);
+  @include  media-max($S){
+    @include font-source-sans(1.5rem,#631f5b,600,1.8rem);
+  }
+}
+              .caption{
+                text-align: right;
+                @include font-source-sans($small-font,#3a3e3d,500,2.5rem);
+              }
+              .titr{
+                text-align: right;
+                margin-top: 20px;
+                font-family: Shabnam;
+                margin-bottom: 10px;
+                width: 100%;
+                @include font-source-sans(1.1rem,#fcaf17,600,1.5rem);
+              }
+
+              .btn{
+                text-align: center;
+                background-color: #fcaf17;
+                color: #fff;
+                font-size: 0.9rem;
+                padding: 10px 30px;
+                display: flex;
+                border-radius: 20px;
+                margin: 10px auto;
+                border: 0;
+              }
+           }
+
+          }
+          .fade-right{
+            @include animation(1s,1s);
+          }
+          .fade-up{
+            @include animation(1.25s,1.25s);
+          }
+        }
+      }
+    }
+  }
+}
+}
+  .modal-fade{
+    @include transition;
+    opacity: 0;
+  }
+  .show{
+    opacity:1 ;
+  }
+}

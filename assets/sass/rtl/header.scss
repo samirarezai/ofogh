@@ -1,0 +1,313 @@
+@import "../mixins";
+@import "../variable";
+.header {
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+
+  position: relative;
+  z-index: 1060;
+  @include flex(row, nowrap, center, center);
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../img/curve1.svg) no-repeat center center;
+    background-size: cover;
+    height: 45px;
+    width: 100%;
+
+    bottom: -2px;
+    right: 0;
+    z-index: 1065;
+    @include media-min($S) {
+      height: 80px;
+    }
+    @include media-min($L) {
+      height: 150px;
+
+    }
+  }
+
+  .over {
+    width: 100%;
+    height: 100%;
+    background: rgba(103, 27, 94, 0.58);
+    position: absolute;
+  }
+
+  .navigation {
+    text-align: right;
+    background-color: #3a3e3d;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1070;
+    font-size: $small-font;
+    position: fixed;
+    @include transition;
+    @include media-min($L) {
+      background-color: #fff;
+    }
+
+    .navbar {
+      @include transition;
+      @include media-min($L) {
+        @include flex(row-reverse, nowrap, center, space-between);
+        padding: 5px 125px;
+      }
+
+      .navigate {
+        width: 100%;
+        @include flex(row, nowrap, center, space-between);
+        @include media-min($L) {
+          width: auto;
+        }
+
+        .bars {
+          &:focus {
+            outline: 0;
+          }
+
+          .hamburger {
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+            margin-top: 15px;
+            position: relative;
+
+            &:before {
+              font-family: Tahoma;
+              content: "MENU";
+              letter-spacing: 2px;
+              font-size: 8px;
+              position: absolute;
+              right: 0px;
+              top: -12px;
+              color: #fff;
+              -moz-transition: all 0.3s;
+              -o-transition: all 0.3s;
+              -webkit-transition: all 0.3s;
+              transition: all 0.3s;
+            }
+
+            span {
+              display: block;
+              position: absolute;
+              height: 2.22px;
+              width: 100%;
+              background: #fff none repeat scroll 0% 0%;
+
+              opacity: 1;
+              right: 0;
+              transition: all 0.25s ease-in-out 0s;
+
+              &:nth-child(1) {
+                margin-top: 0px;
+              }
+
+              &:nth-child(2) {
+                margin-top: 7px;
+              }
+
+              &:nth-child(3) {
+                margin-top: 14px;
+              }
+            }
+          }
+
+          .opened {
+            &:before {
+
+              right: 20px;
+              top: 5px;
+              @include transition;
+              @include transform(-90deg);
+            }
+
+            span {
+              &:nth-child(1) {
+                margin-top: 8px;
+                @include transform(135deg);
+              }
+
+              &:nth-child(2) {
+                @include opacity(0);
+                right: -45px;
+                background: #fff !important;
+
+              }
+
+              &:nth-child(3) {
+                @include transform(-135deg);
+                margin-top: 8px;
+              }
+            }
+          }
+        }
+
+        .navbar-brand {
+          /*   .attention {*/
+          /*  overflow: hidden;
+            position: relative;
+          .ripple-background{
+            position: absolute;
+            z-index: -1;
+            top:55px;
+            right:55px;
+            .circle{
+              position: absolute;
+              border-radius: 50%;
+              background: #fff;
+              animation: ripple 25s infinite;
+              box-shadow: 0px 0px 1px 0px #508fb9;
+            }
+
+            .small{
+              width: 10px;
+              height: 10px;
+              left:20px;
+              bottom: 20px;
+            }
+            .medium{
+              width: 20px;
+              height: 20px;
+              left:15px;
+              bottom: 15px;
+            }
+            .large{
+              width: 30px;
+              height: 30px;
+              left: 10px;
+              bottom: 10px;
+            }
+            .xlarge{
+              width: 40px;
+              height: 40px;
+              left: 5px;
+              bottom: 5px;
+            }
+            .xxlarge{
+              width: 50px;
+              height: 50px;
+              left: 50%;
+              bottom: 50%;
+
+            }
+            .shade1{
+              opacity: 0.2;
+            }
+            .shade2{
+              opacity: 0.4;
+            }
+            .shade3{
+              opacity: 0.55;
+            }
+
+            .shade4{
+              opacity: .65;
+            }
+
+            .shade5{
+              opacity: 0.9;
+            }
+            @include animations(1s,1s,l1,infinite);
+
+            @include ripple;
+          }
+            */
+          img {
+            max-width: 50px;
+            width: 100%;
+            height: auto;
+            padding-right: 0;
+            @include transition;
+            @include media-min($L) {
+              max-width: 60px;
+            }
+          }
+
+          /* }*/
+        }
+      }
+
+      .navbar-collapse {
+        width: 100%;
+        padding: 2px 15px;
+
+        .navbar-nav {
+          .nav-item {
+            @include media-max($L) {
+              font-size: .9rem;
+              font-weight: 500;
+              border-bottom: 1px solid $color-violet-rgba;
+              &:last-child {
+                border-bottom: 0px solid $color-violet;
+              }
+            }
+
+            .nav-link {
+              color: #000;
+              @include transition;
+            }
+
+            .active {
+              @include transition;
+              color: $color-yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .navigation.style-navigation {
+    background-color: $color-dark;
+
+    @include transition;
+
+
+    @include media-min($L) {
+      .navbar {
+        @include transition;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .navigate {
+          .navbar-brand {
+            img {
+              @include transition;
+              max-width: 50px;
+            }
+          }
+        }
+      }
+    }
+   .navbar-collapse {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: #fff;
+            @include transition;
+            font-size: .9rem;
+          }
+
+          .active {
+            @include transition;
+            color: $color-yellow;
+          }
+        }
+      }
+    }
+
+  }
+}
+  .next-padding {
+    width: 100%;
+    padding-top: 30px;
+  }

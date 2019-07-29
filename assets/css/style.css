@@ -1,6 +1,8 @@
 @charset "UTF-8";
+@import "../font/css/font-awesome.css";
 @import "../font-persian/iransans/css/fontiran.css";
 @import "../font-persian/shabnam/shabnam-font.css";
+@import "animate.css";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -9743,25 +9745,30 @@ textarea {
 }
 .header .navigation {
   text-align: right;
-  background-color: #fff;
+  background-color: #3a3e3d;
   top: 0;
   right: 0;
   width: 100%;
-  z-index: 1030;
+  z-index: 1070;
   font-size: 1rem;
   position: fixed;
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+}
+@media screen and (min-width: 992px) {
+  .header .navigation {
+    background-color: #fff;
+  }
 }
 .header .navigation .navbar {
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
 }
 @media screen and (min-width: 992px) {
   .header .navigation .navbar {
@@ -9840,7 +9847,7 @@ textarea {
   position: absolute;
   right: 0px;
   top: -12px;
-  color: #18232f;
+  color: #fff;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -9851,7 +9858,7 @@ textarea {
   position: absolute;
   height: 2.22px;
   width: 100%;
-  background: #18232f none repeat scroll 0% 0%;
+  background: #fff none repeat scroll 0% 0%;
   opacity: 1;
   right: 0;
   transition: all 0.25s ease-in-out 0s;
@@ -9868,11 +9875,11 @@ textarea {
 .header .navigation .navbar .navigate .bars .opened:before {
   right: 20px;
   top: 5px;
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
@@ -9891,7 +9898,7 @@ textarea {
   opacity: 0;
   filter: alpha(opacity=0);
   right: -45px;
-  background: #18232f !important;
+  background: #fff !important;
 }
 .header .navigation .navbar .navigate .bars .opened span:nth-child(3) {
   -moz-transform: rotate(-135deg);
@@ -9901,92 +9908,166 @@ textarea {
   transform: rotate(-135deg);
   margin-top: 8px;
 }
+.header .navigation .navbar .navigate .navbar-brand {
+  /*   .attention {*/
+  /*  overflow: hidden;
+    position: relative;
+  .ripple-background{
+    position: absolute;
+    z-index: -1;
+    top:55px;
+    right:55px;
+    .circle{
+      position: absolute;
+      border-radius: 50%;
+      background: #fff;
+      animation: ripple 25s infinite;
+      box-shadow: 0px 0px 1px 0px #508fb9;
+    }
+
+    .small{
+      width: 10px;
+      height: 10px;
+      left:20px;
+      bottom: 20px;
+    }
+    .medium{
+      width: 20px;
+      height: 20px;
+      left:15px;
+      bottom: 15px;
+    }
+    .large{
+      width: 30px;
+      height: 30px;
+      left: 10px;
+      bottom: 10px;
+    }
+    .xlarge{
+      width: 40px;
+      height: 40px;
+      left: 5px;
+      bottom: 5px;
+    }
+    .xxlarge{
+      width: 50px;
+      height: 50px;
+      left: 50%;
+      bottom: 50%;
+
+    }
+    .shade1{
+      opacity: 0.2;
+    }
+    .shade2{
+      opacity: 0.4;
+    }
+    .shade3{
+      opacity: 0.55;
+    }
+
+    .shade4{
+      opacity: .65;
+    }
+
+    .shade5{
+      opacity: 0.9;
+    }
+    @include animations(1s,1s,l1,infinite);
+
+    @include ripple;
+  }
+    */
+  /* }*/
+}
 .header .navigation .navbar .navigate .navbar-brand img {
   max-width: 50px;
   width: 100%;
   height: auto;
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+  padding-right: 0;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
 }
 @media screen and (min-width: 992px) {
   .header .navigation .navbar .navigate .navbar-brand img {
     max-width: 60px;
   }
 }
-.header .navigation .navbar-collapse {
+.header .navigation .navbar .navbar-collapse {
   width: 100%;
   padding: 2px 15px;
 }
 @media screen and (max-width: 992px) {
-  .header .navigation .navbar-collapse .navbar-nav .nav-item {
+  .header .navigation .navbar .navbar-collapse .navbar-nav .nav-item {
     font-size: 0.9rem;
     font-weight: 500;
     border-bottom: 1px solid rgba(139, 41, 128, 0.2);
   }
-  .header .navigation .navbar-collapse .navbar-nav .nav-item:last-child {
+  .header .navigation .navbar .navbar-collapse .navbar-nav .nav-item:last-child {
     border-bottom: 0px solid #8b2980;
   }
 }
-.header .navigation .navbar-collapse .navbar-nav .nav-item .nav-link {
+.header .navigation .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #000;
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
 }
-.header .navigation .navbar-collapse .navbar-nav .nav-item .active {
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+.header .navigation .navbar .navbar-collapse .navbar-nav .nav-item .active {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
   color: #fcaf17;
 }
-.header .style-navigation {
+.header .navigation.style-navigation {
   background-color: #3a3e3d;
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
 }
 @media screen and (min-width: 992px) {
-  .header .style-navigation .navbar {
-    -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-    -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-    -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-    -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-    transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+  .header .navigation.style-navigation .navbar {
+    -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
     padding-top: 0;
     padding-bottom: 0;
   }
-  .header .style-navigation .navbar .navigate .navbar-brand img {
-    -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-    -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-    -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-    -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-    transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-    max-width: 40px;
+  .header .navigation.style-navigation .navbar .navigate .navbar-brand img {
+    -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    max-width: 50px;
   }
 }
-.header .style-navigation .navbar-collapse .navbar-nav .nav-item .nav-link {
+.header .navigation.style-navigation .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #fff;
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  font-size: 0.9rem;
 }
-.header .style-navigation .navbar-collapse .navbar-nav .nav-item .active {
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+.header .navigation.style-navigation .navbar-collapse .navbar-nav .nav-item .active {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
   color: #fcaf17;
 }
 
@@ -9995,6 +10076,258 @@ textarea {
   padding-top: 30px;
 }
 
+/*
+input,
+textarea {
+  @include input-placeholder {
+    color: $grey;
+  }
+}
+*/
+.navigation-modal {
+  text-align: right;
+  background-color: #3a3e3d;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1070;
+  font-size: 1rem;
+  position: fixed;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+}
+.navigation-modal .navbar {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+}
+@media screen and (min-width: 992px) {
+  .navigation-modal .navbar {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+    padding: 5px 125px;
+  }
+}
+.navigation-modal .navbar .navigate {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+}
+@media screen and (min-width: 992px) {
+  .navigation-modal .navbar .navigate {
+    width: auto;
+  }
+}
+.navigation-modal .navbar .navigate .bars:focus {
+  outline: 0;
+}
+.navigation-modal .navbar .navigate .bars .hamburger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  position: relative;
+}
+.navigation-modal .navbar .navigate .bars .hamburger:before {
+  font-family: Tahoma;
+  content: "MENU";
+  letter-spacing: 2px;
+  font-size: 8px;
+  position: absolute;
+  right: 0px;
+  top: -12px;
+  color: #fff;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.navigation-modal .navbar .navigate .bars .hamburger span {
+  display: block;
+  position: absolute;
+  height: 2.22px;
+  width: 100%;
+  background: #fff none repeat scroll 0% 0%;
+  opacity: 1;
+  right: 0;
+  transition: all 0.25s ease-in-out 0s;
+}
+.navigation-modal .navbar .navigate .bars .hamburger span:nth-child(1) {
+  margin-top: 0px;
+}
+.navigation-modal .navbar .navigate .bars .hamburger span:nth-child(2) {
+  margin-top: 7px;
+}
+.navigation-modal .navbar .navigate .bars .hamburger span:nth-child(3) {
+  margin-top: 14px;
+}
+.navigation-modal .navbar .navigate .bars .opened:before {
+  right: 20px;
+  top: 5px;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.navigation-modal .navbar .navigate .bars .opened span:nth-child(1) {
+  margin-top: 8px;
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.navigation-modal .navbar .navigate .bars .opened span:nth-child(2) {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  right: -45px;
+  background: #fff !important;
+}
+.navigation-modal .navbar .navigate .bars .opened span:nth-child(3) {
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  margin-top: 8px;
+}
+.navigation-modal .navbar .navigate .navbar-brand img {
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+}
+@media screen and (min-width: 992px) {
+  .navigation-modal .navbar .navigate .navbar-brand img {
+    max-width: 60px;
+  }
+}
+.navigation-modal .navbar-collapse {
+  width: 100%;
+  padding: 2px 15px;
+}
+@media screen and (max-width: 992px) {
+  .navigation-modal .navbar-collapse .navbar-nav .nav-item {
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(139, 41, 128, 0.2);
+  }
+  .navigation-modal .navbar-collapse .navbar-nav .nav-item:last-child {
+    border-bottom: 0px solid #8b2980;
+  }
+}
+.navigation-modal .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+}
+.navigation-modal .navbar-collapse .navbar-nav .nav-item .active {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  color: #fcaf17;
+}
+
+/*
+.style-navigation {
+  background-color: $color-dark;
+  @include transition;
+  @include media-min($L) {
+    .navbar {
+      @include transition;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .navigate {
+        .navbar-brand {
+          img {
+            @include transition;
+            max-width: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-collapse {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: #fff;
+          @include transition;
+          font-size: .9rem;
+        }
+
+        .active {
+          @include transition;
+          color: $color-yellow;
+        }
+      }
+    }
+  }
+}*/
 /*
 input,
 textarea {
@@ -10062,6 +10395,26 @@ textarea {
   color: #fff;
   font-weight: 600;
   line-height: 3.5rem;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-duration: 0.75s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0.5s;
+  -moz-animation-duration: 0.75s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0.5s;
+  -o-animation-duration: 0.75s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0.5s;
+  animation-duration: 0.75s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
 }
 @media screen and (max-width: 768px) {
   .inner .box-text .title {
@@ -10076,6 +10429,26 @@ textarea {
   color: #ffffffd9;
   font-weight: 400;
   line-height: 1.5rem;
+  -webkit-animation-delay: 1.25s;
+  -webkit-animation-duration: 0.75s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1.25s;
+  -moz-animation-duration: 0.75s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1.25s;
+  -o-animation-duration: 0.75s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1.25s;
+  animation-duration: 0.75s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
 }
 @media screen and (max-width: 768px) {
   .inner .box-text .caption {
@@ -10095,6 +10468,63 @@ textarea {
   position: absolute;
   bottom: -40px;
   right: calc(50% - 75px);
+  opacity: 0;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 0.5s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 2s;
+  -moz-animation-duration: 0.5s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 2s;
+  -o-animation-duration: 0.5s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 2s;
+  animation-duration: 0.5s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -webkit-animation-name: l;
+  -moz-animation-name: l;
+  -o-animation-name: l;
+  animation-name: l;
+}
+@-webkit-keyframes l {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes l {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes l {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes l {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*
@@ -10108,6 +10538,7 @@ textarea {
 .about {
   text-align: right;
   margin-top: 50px;
+  overflow: hidden;
 }
 .about .row .box-col {
   display: -webkit-box;
@@ -10182,12 +10613,32 @@ textarea {
   font-size: 1rem;
   color: #3a3e3d;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 2.1rem;
 }
 .about .row .image {
   position: relative;
   width: 100%;
   height: 400px;
+  -webkit-animation-delay: 1.25s;
+  -webkit-animation-duration: 0.75s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1.25s;
+  -moz-animation-duration: 0.75s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1.25s;
+  -o-animation-duration: 0.75s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1.25s;
+  animation-duration: 0.75s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
 }
 .about .row .image img {
   position: absolute;
@@ -10201,24 +10652,124 @@ textarea {
   border-radius: 10px;
 }
 .about .row .image img:nth-child(1) {
-  top: 30%;
-  left: 50%;
+  top: 23%;
+  left: 58%;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 0.75s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 0.75s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1s;
+  -o-animation-duration: 0.75s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1s;
+  animation-duration: 0.75s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
 }
 .about .row .image img:nth-child(2) {
-  top: 40%;
-  left: 30%;
+  top: 46%;
+  left: 44%;
+  -webkit-animation-delay: 1 s;
+  -webkit-animation-duration: 1s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1 s;
+  -moz-animation-duration: 1s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1 s;
+  -o-animation-duration: 1s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1 s;
+  animation-duration: 1s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
 }
 .about .row .image img:nth-child(3) {
   top: 16%;
   left: 4%;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-duration: 0.5s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1.5s;
+  -moz-animation-duration: 0.5s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1.5s;
+  -o-animation-duration: 0.5s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1.5s;
+  animation-duration: 0.5s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
 }
 .about .row .image img:nth-child(4) {
-  top: 10%;
+  top: 0%;
   left: 35%;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 0.75s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 2s;
+  -moz-animation-duration: 0.75s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 2s;
+  -o-animation-duration: 0.75s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 2s;
+  animation-duration: 0.75s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
 }
 .about .row .image img:nth-child(5) {
-  top: 40%;
+  top: 52%;
   left: 10%;
+  -webkit-animation-delay: 2.25s;
+  -webkit-animation-duration: 1s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 2.25s;
+  -moz-animation-duration: 1s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 2.25s;
+  -o-animation-duration: 1s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 2.25s;
+  animation-duration: 1s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
 }
 
 /*
@@ -10232,7 +10783,7 @@ textarea {
 .cards {
   position: relative;
   margin: 100px 0 0;
-  padding-bottom: 300px;
+  padding-bottom: 350px;
   background: url("../img/dotss.png") repeat;
 }
 @media screen and (max-width: 768px) {
@@ -10363,7 +10914,93 @@ textarea {
   justify-content: center;
   -ms-flex-pack: center;
 }
+.pack .row .box-col:nth-child(1) {
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 1s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1s;
+  -o-animation-duration: 1s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1s;
+  animation-duration: 1s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+}
+.pack .row .box-col:nth-child(2) {
+  -webkit-animation-delay: 1.4s;
+  -webkit-animation-duration: 1s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1.4s;
+  -moz-animation-duration: 1s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1.4s;
+  -o-animation-duration: 1s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1.4s;
+  animation-duration: 1s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+}
+.pack .row .box-col:nth-child(3) {
+  -webkit-animation-delay: 1.8s;
+  -webkit-animation-duration: 1s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1.8s;
+  -moz-animation-duration: 1s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1.8s;
+  -o-animation-duration: 1s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1.8s;
+  animation-duration: 1s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+}
 .pack .row .box-col .text {
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-duration: 0.75s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1.5s;
+  -moz-animation-duration: 0.75s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1.5s;
+  -o-animation-duration: 0.75s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1.5s;
+  animation-duration: 0.75s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -10415,11 +11052,11 @@ textarea {
   background-color: transparent;
   color: #8b2980;
   padding: 5px 20px;
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -10444,32 +11081,11 @@ textarea {
 */
 .slider {
   width: 100%;
-  background-color: #ae55a129;
+  background-color: #e0cadd;
   text-align: center;
   position: relative;
   overflow: hidden;
-}
-.slider:after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: url(../img/curve1.svg) no-repeat center center;
-  background-size: cover;
-  height: 45px;
-  width: 100%;
-  bottom: -2px;
-  right: 0;
-  z-index: 1040;
-}
-@media screen and (min-width: 576px) {
-  .slider:after {
-    height: 80px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .slider:after {
-    height: 150px;
-  }
+  padding: 50px 0 0;
 }
 .slider .container .head .title {
   font-family: Shabnam;
@@ -10492,27 +11108,28 @@ textarea {
   right: calc(50% - 42px);
 }
 .slider .container .carousel {
-  height: 300px;
+  height: 240px;
 }
 .slider .container .carousel .carousel-indicators {
   left: 40px;
-  bottom: 60px;
+  bottom: 0px;
 }
 .slider .container .carousel .carousel-indicators li {
+  background-color: #c1c1c1;
   border-radius: 50%;
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
 }
 .slider .container .carousel .carousel-indicators .active {
   background-color: #fcaf17;
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
 }
 .slider .container .carousel .carousel-inner {
   padding: 5px;
@@ -10615,10 +11232,73 @@ textarea {
 */
 .connection {
   width: 100%;
-  border-bottom: 1px solid #464646eb;
-  padding-bottom: 20px;
+  z-index: 12;
+  background: url("../img/connect.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 100px 0 50px;
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  margin: 0;
 }
-.connection .head .title {
+.connection:after {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-border-radius: 50% 50% 47% 53%/3% 3% 97% 97%;
+  -moz-border-radius: 50% 50% 47% 53%/3% 3% 97% 97%;
+  border-radius: 50% 50% 47% 53%/3% 3% 97% 97%;
+  background-color: #e0cadd;
+  height: 25px;
+  width: 110%;
+  top: -3px;
+  z-index: 1050;
+  right: -5%;
+}
+@media screen and (min-width: 576px) {
+  .connection:after {
+    height: 33px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .connection:after {
+    height: 65px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connection:after {
+    height: 115px;
+  }
+}
+.connection .cover {
+  position: relative;
+}
+.connection .cover .overlay .box-col {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+.connection .cover .overlay .box-col .head .title {
   text-align: center;
   font-family: Shabnam;
   margin: 50px 0;
@@ -10628,7 +11308,7 @@ textarea {
   line-height: 2.1;
   position: relative;
 }
-.connection .head .title:after {
+.connection .cover .overlay .box-col .head .title:after {
   content: "";
   width: 100px;
   height: 2px;
@@ -10640,7 +11320,7 @@ textarea {
   right: calc(50% - 42px);
 }
 @media screen and (min-width: 768px) {
-  .connection .form-group-inline {
+  .connection .cover .overlay .form-group-inline {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -10666,88 +11346,103 @@ textarea {
     -ms-flex-pack: space-between;
   }
 }
-.connection .form-group-inline .form-group {
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+.connection .cover .overlay .form-group-inline .form-group {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
 }
 @media screen and (min-width: 768px) {
-  .connection .form-group-inline .form-group {
+  .connection .cover .overlay .form-group-inline .form-group {
     flex-basis: 500px;
   }
 }
-.connection .form-group-inline .form-group .form-control {
+.connection .cover .overlay .form-group-inline .form-group .form-control {
   background-color: transparent;
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
   border: 1px solid transparent;
-  border-bottom: 1px solid #ffffff52;
+  border-bottom: 1px solid #fff;
   border-radius: 0;
   color: #fff;
 }
-.connection .form-group-inline .form-group .form-control:focus {
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
+.connection .cover .overlay .form-group-inline .form-group .form-control:focus {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid #fff;
+  outline: 0;
+  box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+}
+.connection .cover .overlay .form-group-inline .form-group .form-control:hover {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  border: 1px solid #fff;
+}
+.connection .cover .overlay .form-group .form-control {
+  background-color: transparent;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #fff;
+  border-radius: 0;
+  color: #fff;
+}
+.connection .cover .overlay .form-group .form-control::placeholder {
+  color: #cac6c6;
+  opacity: 1;
+  /* Firefox */
+}
+.connection .cover .overlay .form-group .form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #cac6c6;
+}
+.connection .cover .overlay .form-group .form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #cac6c6;
+}
+.connection .cover .overlay .form-group .form-control:focus {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
   color: #fff;
   background-color: transparent;
   border-color: transparent;
   outline: 0;
   box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+  border-bottom: 1px solid #fff;
 }
-.connection .form-group-inline .form-group .form-control:hover {
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  border: 1px solid #ffffff52;
+.connection .cover .overlay .form-group .form-control:hover {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  border: 1px solid #fff;
 }
-.connection .form-group .form-control {
-  background-color: transparent;
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  border: 1px solid transparent;
-  border-bottom: 1px solid #ffffff52;
-  border-radius: 0;
-  color: #fff;
-}
-.connection .form-group .form-control:focus {
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  color: #fff;
-  background-color: transparent;
-  border-color: transparent;
-  outline: 0;
-  box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
-}
-.connection .form-group .form-control:hover {
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  transition: all 0.3s, width 0.3s, opacity 0s, border 0.1s, margin 0s, background 0.3s;
-  border: 1px solid #ffffff52;
-}
-.connection .btn {
+.connection .cover .overlay .btn {
   text-align: center;
   background-color: #fcaf17;
   color: #fff;
@@ -10756,6 +11451,222 @@ textarea {
   display: flex;
   border-radius: 20px;
   margin: 10px auto;
+}
+.connection .filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: transparent;
+  background: -webkit-linear-gradient(left, transparent, #42003b);
+  background: linear-gradient(to right, transparent, #42003b);
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/*
+input,
+textarea {
+  @include input-placeholder {
+    color: $grey;
+  }
+}
+*/
+.all-modal {
+  z-index: 1080;
+}
+.all-modal .modal {
+  direction: ltr;
+  text-align: right;
+  z-index: 1080;
+  border: 0;
+  background-color: #fff;
+}
+.all-modal .modal .modal-dialog {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  margin: 0;
+  min-height: 100vh;
+}
+.all-modal .modal .modal-dialog .modal-content {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  min-height: 100vh;
+  background: url("../img/dotss.png") repeat;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body {
+  direction: rtl;
+  padding: 0;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .cards {
+  margin-top: 50px;
+  background: transparent;
+  padding-bottom: 250px;
+}
+@media screen and (max-width: 768px) {
+  .all-modal .modal .modal-dialog .modal-content .modal-body .cards .cover {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack {
+    position: absolute;
+  }
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack .box-col {
+  border: 0;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack .box-col .text {
+  padding: 5px;
+  width: 100%;
+  min-height: 300px;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+@media screen and (min-width: 768px) {
+  .all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack .box-col .text {
+    padding: 15px;
+  }
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack .box-col .text .image {
+  width: 100px;
+  height: 100px;
+  background-color: #fcaf17;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  padding: 10px;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack .box-col .text .image img {
+  max-width: 60px;
+  width: 100%;
+  height: auto;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack .box-col .text .title {
+  margin-top: 20px;
+  font-family: Shabnam;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #631f5b;
+  font-weight: 600;
+  line-height: 2.3rem;
+}
+@media screen and (max-width: 576px) {
+  .all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack .box-col .text .title {
+    font-size: 1.5rem;
+    color: #631f5b;
+    font-weight: 600;
+    line-height: 1.8rem;
+  }
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack .box-col .text .caption {
+  text-align: right;
+  font-size: 1rem;
+  color: #3a3e3d;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack .box-col .text .titr {
+  text-align: right;
+  margin-top: 20px;
+  font-family: Shabnam;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 1.1rem;
+  color: #fcaf17;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack .box-col .text .btn {
+  text-align: center;
+  background-color: #fcaf17;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 10px 30px;
+  display: flex;
+  border-radius: 20px;
+  margin: 10px auto;
+  border: 0;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack .fade-right {
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 1s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1s;
+  -o-animation-duration: 1s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1s;
+  animation-duration: 1s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack .fade-up {
+  -webkit-animation-delay: 1.25s;
+  -webkit-animation-duration: 1.25s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1.25s;
+  -moz-animation-duration: 1.25s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1.25s;
+  -o-animation-duration: 1.25s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1.25s;
+  animation-duration: 1.25s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+}
+.all-modal .modal-fade {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  opacity: 0;
+}
+.all-modal .show {
+  opacity: 1;
 }
 
 /*
@@ -10770,8 +11681,8 @@ textarea {
   color: #fff;
   width: 100%;
   background-color: #3a3e3d;
-  position: relative;
   text-align: right;
+  padding: 40px 0;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -10795,32 +11706,191 @@ textarea {
   -ms-justify-content: flex-start;
   justify-content: flex-start;
   -ms-flex-pack: flex-start;
-  /* &:after{
-     content: "";
-     display: block;
-     position: absolute;
-     background: url(../img/curve1.svg) no-repeat center center;
-     background-size: cover;
-     height: 45px;
-     width:100%;
-
-     top:-2px;
-     right: 0;
-     z-index: 1040;
-     @include transform(180deg);
-
-     @include media-min($S){
-       height: 80px;
-     }
-     @include media-min($L){
-       height: 150px;
-     }
-   }*/
 }
 .footer .info {
   margin: 30px 0;
 }
-.footer .btn-to-top {
+.footer .info .subject .fa {
+  padding-left: 8px;
+  font-size: 1rem;
+  color: #fcaf17;
+  font-weight: 500;
+  line-height: 1.1rem;
+}
+.footer .info .list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+}
+.footer .info .list .item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  margin-left: 20px;
+  width: 35px;
+  height: 35px;
+  background-color: #fcaf17;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.footer .info .list .item:hover:nth-child(1) {
+  background-color: #e4405f;
+}
+.footer .info .list .item:hover:nth-child(2) {
+  background-color: #3b5999;
+}
+.footer .info .list .item:hover:nth-child(3) {
+  background-color: #00AFF0;
+}
+.footer .info .list .item:hover:nth-child(4) {
+  background-color: #0077B5;
+}
+.footer .info .list .item .link {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+.footer .info .list .item .link .fa {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.1rem;
+}
+.footer .copy {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  border-top: 1px solid #fcaf17;
+  padding: 15px 0;
+}
+@media screen and (min-width: 576px) {
+  .footer .copy {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+    padding: 20px 0 0;
+  }
+}
+.footer .copy .copyright {
+  font-size: 0.7rem;
+  color: #b7b4ae;
+  font-weight: 300;
+  line-height: 1.1rem;
+}
+
+.btn-to-top {
   margin: 10px;
   cursor: pointer;
   position: fixed;
@@ -10855,8 +11925,59 @@ textarea {
   justify-content: center;
   -ms-flex-pack: center;
   z-index: 1050;
+  -webkit-animation-delay: 20s;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: circle;
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-delay: 20s;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-name: circle;
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-iteration-count: 1;
+  -o-animation-delay: 20s;
+  -o-animation-duration: 0.5s;
+  -o-animation-name: circle;
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-iteration-count: 1;
+  animation-delay: 20s;
+  animation-duration: 0.5s;
+  animation-name: circle;
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-iteration-count: 1;
 }
-.footer .btn-to-top img {
+@-webkit-keyframes circle {
+  to {
+    -moz-transform: rotate(450deg);
+    -ms-transform: rotate(450deg);
+    -o-transform: rotate(450deg);
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+}
+@-moz-keyframes circle {
+  to {
+    -moz-transform: rotate(450deg);
+    -ms-transform: rotate(450deg);
+    -o-transform: rotate(450deg);
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+}
+@keyframes circle {
+  to {
+    -moz-transform: rotate(450deg);
+    -ms-transform: rotate(450deg);
+    -o-transform: rotate(450deg);
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+}
+.btn-to-top img {
   max-width: 40px;
 }
 

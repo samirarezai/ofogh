@@ -1,0 +1,260 @@
+/*
+input,
+textarea {
+  @include input-placeholder {
+    color: $grey;
+  }
+}
+*/
+.navigation {
+  text-align: right;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1070;
+  font-size: 1rem;
+  position: fixed;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+}
+.navigation .navbar {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+}
+@media screen and (min-width: 992px) {
+  .navigation .navbar {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+    padding: 5px 125px;
+  }
+}
+.navigation .navbar .navigate {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+}
+@media screen and (min-width: 992px) {
+  .navigation .navbar .navigate {
+    width: auto;
+  }
+}
+.navigation .navbar .navigate .bars:focus {
+  outline: 0;
+}
+.navigation .navbar .navigate .bars .hamburger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  position: relative;
+}
+.navigation .navbar .navigate .bars .hamburger:before {
+  font-family: Tahoma;
+  content: "MENU";
+  letter-spacing: 2px;
+  font-size: 8px;
+  position: absolute;
+  right: 0px;
+  top: -12px;
+  color: #fff;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.navigation .navbar .navigate .bars .hamburger span {
+  display: block;
+  position: absolute;
+  height: 2.22px;
+  width: 100%;
+  background: #fff none repeat scroll 0% 0%;
+  opacity: 1;
+  right: 0;
+  transition: all 0.25s ease-in-out 0s;
+}
+.navigation .navbar .navigate .bars .hamburger span:nth-child(1) {
+  margin-top: 0px;
+}
+.navigation .navbar .navigate .bars .hamburger span:nth-child(2) {
+  margin-top: 7px;
+}
+.navigation .navbar .navigate .bars .hamburger span:nth-child(3) {
+  margin-top: 14px;
+}
+.navigation .navbar .navigate .bars .opened:before {
+  right: 20px;
+  top: 5px;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.navigation .navbar .navigate .bars .opened span:nth-child(1) {
+  margin-top: 8px;
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.navigation .navbar .navigate .bars .opened span:nth-child(2) {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  right: -45px;
+  background: #fff !important;
+}
+.navigation .navbar .navigate .bars .opened span:nth-child(3) {
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  margin-top: 8px;
+}
+.navigation .navbar .navigate .navbar-brand img {
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+}
+@media screen and (min-width: 992px) {
+  .navigation .navbar .navigate .navbar-brand img {
+    max-width: 60px;
+  }
+}
+.navigation .navbar-collapse {
+  width: 100%;
+  padding: 2px 15px;
+}
+@media screen and (max-width: 992px) {
+  .navigation .navbar-collapse .navbar-nav .nav-item {
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(139, 41, 128, 0.2);
+  }
+  .navigation .navbar-collapse .navbar-nav .nav-item:last-child {
+    border-bottom: 0px solid #8b2980;
+  }
+}
+.navigation .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #000;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+}
+.navigation .navbar-collapse .navbar-nav .nav-item .active {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  color: #fcaf17;
+}
+
+.style-navigation {
+  background-color: #3a3e3d;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+}
+@media screen and (min-width: 992px) {
+  .style-navigation .navbar {
+    -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .style-navigation .navbar .navigate .navbar-brand img {
+    -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+    max-width: 50px;
+  }
+}
+.style-navigation .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  font-size: 0.9rem;
+}
+.style-navigation .navbar-collapse .navbar-nav .nav-item .active {
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s;
+  color: #fcaf17;
+}
+
+/*# sourceMappingURL=navigation-modal.css.map */

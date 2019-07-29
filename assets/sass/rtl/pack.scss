@@ -14,20 +14,28 @@ width: 100%;
   .row{
 
     .box-col{
-
       @include flex(column,nowrap,center,center);
-
+      &:nth-child(1){
+        @include animation(1s,1s);
+      }
+      &:nth-child(2){
+        @include animation(1.40s,1s);
+      }
+      &:nth-child(3){
+        @include animation(1.80s,1s);
+      }
 
       .text{
+        @include animation(1.5s,.75s);
         @include radius(10px);
         @include box-shadow(0px 0px 3px 2px #e8e8e854);
-
 min-height: 350px;
         background-color: #fff;
         padding: 20px;
         @include media-max($M){
           margin-top: 25px;
           margin-bottom: 25px;
+
         }
         .image{
           width: 70px;
@@ -60,6 +68,7 @@ min-height: 350px;
           @include font-source-sans(.9rem,#3a3e3d,400,1.7);
 
         }
+
         .btn-card{
           background-color: transparent;
           color: $color-violet;

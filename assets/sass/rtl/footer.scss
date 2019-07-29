@@ -1,56 +1,103 @@
 @import "../mixins";
 @import "../variable";
 
-.footer{
+.footer {
   color: #fff;
-width: 100%;
+  width: 100%;
   background-color: $color-dark;
-  position: relative;
+
   text-align: right;
-  @include flex(column,nowrap,center,flex-start);
-   /* &:after{
-      content: "";
-      display: block;
-      position: absolute;
-      background: url(../img/curve1.svg) no-repeat center center;
-      background-size: cover;
-      height: 45px;
-      width:100%;
+  padding: 40px 0;
+  @include flex(column, nowrap, center, flex-start);
+  .info {
+    margin: 30px 0;
 
-      top:-2px;
-      right: 0;
-      z-index: 1040;
-      @include transform(180deg);
+    .subject {
 
-      @include media-min($S){
-        height: 80px;
+      .fa {
+        padding-left: 8px;
+        @include font-source-sans(1rem, $color-yellow, 500, 1.1rem);
       }
-      @include media-min($L){
-        height: 150px;
-      }
-    }*/
-.info{
-  margin: 30px 0;
-
-}
-  .btn-to-top{
-    margin: 10px;
-    cursor: pointer;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    @include transform(90deg);
-    @include flex(row,nowrap,center,center);
-    z-index: 1050;
-    img{
-      max-width: 40px;
-
     }
 
+    .list {
+      @include flex(row, nowrap, center, flex-start);
+
+      .item {
+        @include flex(row, nowrap, center, center);
+        margin-left: 20px;
+        width: 35px;
+        height: 35px;
+        background-color: $color-yellow;
+        @include transition;
+
+        &:hover:nth-child(1) {
+          background-color: #e4405f;
+        }
+
+        &:hover:nth-child(2) {
+          background-color: #3b5999;
+        }
+
+        &:hover:nth-child(3) {
+          background-color: #00AFF0;
+        }
+
+        &:hover:nth-child(4) {
+          background-color: #0077B5;
+        }
+
+        @include radius(50%);
+
+        .link {
+          text-decoration: none;
+          @include flex(row, nowrap, center, center);
+
+          .fa {
+            @include transition;
+            @include font-source-sans(1rem, #fff, 500, 1.1rem);
+          }
+        }
+      }
+    }
+  }
+
+  .copy {
+    @include flex(column, nowrap, center, center);
+    border-top: 1px solid #fcaf17;
+    padding: 15px 0;
+    @include media-min($S) {
+      @include flex(row, nowrap, center, space-between);
+      padding: 20px 0 0;
+    }
+
+    .copyright {
+      @include font-source-sans(.7rem, #b7b4ae, 300, 1.1rem);
+    }
+  }
+}
+
+.btn-to-top {
+  margin: 10px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  @include transform(90deg);
+  @include flex(row, nowrap, center, center);
+  z-index: 1050;
+  @include animations(20s, .5s, circle, 1);
+  @include keyframes(circle) {
+    from {
+    }
+    to {
+      @include transform(450deg);
+    }
+  }
+
+  img {
+    max-width: 40px;
   }
 
 }
-
-
-
 

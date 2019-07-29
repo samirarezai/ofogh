@@ -1,12 +1,15 @@
 
 @import "bootstrap-scss/bootstrap";
+@import "../font/css/font-awesome.css";
 @import "../font-persian/iransans/css/fontiran.css";
 @import "../font-persian/shabnam/shabnam-font.css";
+@import "animate.css";
 @import "mixins";
 @import "variable";
 @import "font";
 @import "rtl/public";
-@import "rtl/navigation";
+@import "rtl/header";
+@import "rtl/navigation-modal";
 @import "rtl/inner";
 @import "rtl/about";
 @import "rtl/cards";
@@ -14,4 +17,6 @@
 @import "rtl/slider";
 @import "rtl/connection";
 
+@import "rtl/modal";
 @import "rtl/footer";
+

@@ -47,23 +47,60 @@ $(document).ready(function(){
 //=======================scroll navbar===================//
     $(window).scroll(function(){
         var y = $(this).scrollTop();
-        if( $(this).scrollTop() > 99){
+        if( y > 99){
             $('.navigation').addClass('style-navigation');
-            /* $('.navigation .navbar-brand img').css('max-width','50px');*/
 
-        } else if($(this).scrollTop() < 99 ){
+        } else if(y < 99 ){
             $('.navigation').removeClass('style-navigation');
-            /*   $('.navigation .navbar-brand img').css('max-width','90px');*/
+
 
         }
     });
+//=======================animate for about===================//
+    var $window = $(window);
+    $window.on('scroll', check_if_in_view);
 
+    $window.trigger('scroll');
 
+    function check_if_in_view() {
+        var window_height = $window.height();
+        var window_top_position = $window.scrollTop();
+        var window_bottom_position = (window_top_position + window_height);
+         function asd() {
+            var $element = $('.about');
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
 
+            //check to see if this current container is within viewport
+            if ((!($(this).hasClass('ok'))) &&
+                (element_top_position <= window_bottom_position)) {
+                $element.addClass('ok');
+                $('.about .image img').addClass('fadeInLeft');
+            } /*else {
+                $element.removeClass('fadeInLeft');
+            }*/
+        };
+        function asd2() {
+            var $element = $('.pack');
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
 
-
-
-
+            //check to see if this current container is within viewport
+            if (/*(!($(this).hasClass('ok'))) &&*/
+                (element_top_position <= window_bottom_position)) {
+                $element.addClass('ok');
+                $('.pack .fade-up').addClass('fadeInUp');
+                $('.pack .fade-right').addClass('fadeInRight');
+            } /*else {
+                $element.removeClass('fadeInLeft');
+            }*/
+        };
+         asd();
+         asd2();
+    };
+    //=======================animate for about===================//
 
 
 

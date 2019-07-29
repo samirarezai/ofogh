@@ -30,13 +30,18 @@
     font-family: Shabnam,IRANSans;
 margin: 0 0 30px;
     @include font-source-sans(2.8rem, #fff, 600, 3.5rem);
+@include animation(.5s,.75s);
+
     @include media-max($M){
 
       @include font-source-sans(2rem, #fff, 500, 3rem);
+
     }
   }
   .caption{
     @include font-source-sans($small-font, #ffffffd9, 400,  1.5rem);
+    @include animation(1.25s,.75s);
+
     @include media-max($M){
 
       @include font-source-sans(.8rem, #fff, 300, 1rem);
@@ -50,6 +55,10 @@ margin: 0 0 30px;
     position: absolute;
     bottom:-40px;
     right:calc(50% - 75px);
+    opacity: 0;
+    @include animation(2s,.5s);
+@include keyframe;
+
   }
 }
 }

@@ -1,0 +1,13 @@
+/*
+input,
+textarea {
+  @include input-placeholder {
+    color: $grey;
+  }
+}
+*/
+.all-modal {
+  z-index: 1080;
+}
+
+/*# sourceMappingURL=modal.css.map */
