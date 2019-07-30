@@ -25,8 +25,6 @@ $(document).ready(function(){
                 $(this).parent().addClass('actived');
             });
 
-
-
         }  // End if
     });
     $("#top-btn").click(function(){
@@ -56,6 +54,7 @@ $(document).ready(function(){
 
         }
     });
+    //=======================typewriter effect===================//
 //=======================animate for about===================//
     var $window = $(window);
     $window.on('scroll', check_if_in_view);
@@ -100,9 +99,11 @@ $(document).ready(function(){
          asd();
          asd2();
     };
-    //=======================animate for about===================//
 
+    //=======================tooltip===================//
+    $('[data-toggle="tooltip"]').tooltip();
 
+    //=======================tooltip===================//
 
 
 

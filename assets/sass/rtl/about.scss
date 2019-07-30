@@ -45,6 +45,7 @@ font-family: Shabnam;
       }
       .caption{
         @include font-source-sans($small-font,#3a3e3d,400,2.1rem);
+text-align: right;
       }
     }
     }

@@ -29,26 +29,24 @@
     <link href="assets/img/logo.png" type="image/x-icon" rel="shortcut icon"/>
     <!--meta name="p:domain_verify" content="6062654b16d03337497b76b4acbcef72" /-->
 
+
+    <link rel="stylesheet" href="assets/animated-headline-master/css/style.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
-<body>
+<body onload="myLoad()">
 <header>
     <section class="header"id="header" >
         <div class="over"></div>
 
         <section class="navigation">
-            <!--<div class="attention">
-
-                <div class="ripple-background">
-                    <div class="circle xxlarge shade1"></div>
-                    <div class="circle xlarge shade2"></div>
-                    <div class="circle large shade3"></div>
-                    <div class="circle medium shade4"></div>
-                    <div class="circle small shade5"></div>
-                </div>
-
-            </div>-->
+            <div class="ripple1-background">
+                <div class="circle xxlarge shade1"></div>
+                <div class="circle xlarge shade2"></div>
+                <div class="circle large shade3"></div>
+                <div class="circle medium shade4"></div>
+                <div class="circle small shade5"></div>
+            </div>
             <nav class="navbar navbar-expand-lg">
                 <div class="navigate">
                     <button class="navbar-toggler bars" data-open="open" type="button" data-toggle="collapse"
@@ -63,7 +61,11 @@
                     </button>
 
                     <a class="navbar-brand" href="#">
-                      <img src="assets/img/logo.png" alt="logo"></a>
+
+                        <img class="name-logo" src="assets/img/name-logo.png" alt="ofogh">
+                      <img class="logo" src="assets/img/logo.png" alt="logo">
+
+                    </a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav p-0">
@@ -94,7 +96,17 @@
 <section class="inner">
     <div class="container p-0">
         <div class="box-text">
-            <h2 class="title fadeIn">شرکت افق گستر مبین شریف</h2>
+            <h2 class="title fadeIn" id="dert">شرکت افق گستر مبین شریف</h2>
+            <section class="cd-intro fadeInLeft">
+                <h1 class="cd-headline clip is-full-width">
+                    <!--span>My sentence is</span-->
+                    <span class="cd-words-wrapper">
+				<b class="is-visible">خدمات ارزش افزوده</b>
+				<b>دیجیتال مارکتینگ</b>
+				<b>طراحی اپیلیکیشن و سایت</b>
+			</span>
+                </h1>
+            </section>
             <p class="caption fadeInRight">شرکت افق گستر مبین شریف در نظر دارد بهترین هارا برای شما ارائه دهد</p>
         </div>
     </div>
@@ -111,7 +123,7 @@
             <div class="col-12 col-md-6 box-col">
                 <div class="text">
                     <h5 class="title">درباره افق</h5>
-                    <p class="caption">شرکت افق گستر مبین شریف با نام تجاری افق پلاس، فعالیت خود را در سال 1395 با محوریت ارائه خدمات راهبردی در زمینه خدمات ارزش افزوده و راه‌کارهای بهینه در تبلیغات دیجیتال آغاز نموده افق پلاس هم اکنون با داشتن تیمی مجرب و کارشناسانی متخصص آماده ارائه خدمات با هدف ارتقای فرهنگ دیجیتال در جامعه ایرانی است.</p>
+                    <p class="caption" >شرکت افق گستر مبین شریف با نام تجاری افق پلاس، فعالیت خود را در سال 1395 با محوریت ارائه خدمات راهبردی در زمینه خدمات ارزش افزوده و راه‌کارهای بهینه در تبلیغات دیجیتال آغاز نموده افق پلاس هم اکنون با داشتن تیمی مجرب و کارشناسانی متخصص آماده ارائه خدمات با هدف ارتقای فرهنگ دیجیتال در جامعه ایرانی است.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6">
@@ -229,7 +241,6 @@
                             </nav>
 
                         </section>
-<div class="modal-box">
                         <section class="cards">
                             <div class="container-fluid p-0">
                                 <div class="cover">
@@ -242,7 +253,9 @@
                                 <div class="container">
                                     <div class="row  justify-content-center">
                                         <div class="col-12 col-md-10 box-col fade-right">
+
                                             <div class="text">
+                                                <button type="button" class="icon-close" data-dismiss="modal" data-toggle="tooltip" data-placement="left" title="بازگشت به صفحه قبل" style="z-index: 10910;"><i class="fa fa-chevron-circle-left"></i></button>
                                                 <div class="image">
                                                     <img src="assets/img/card1.svg" alt="">
                                                 </div>
@@ -316,12 +329,52 @@
                     </div>
                 </div>
             </div>
-        </div>
         <!--=====================2====================-->
         <div class="modal modal2 modal-fade p-0" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
+                        <section class="navigation-modal">
+
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="navigate">
+                                    <button class="navbar-toggler bars" data-open="open" type="button" data-toggle="collapse"
+                                            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                                            aria-expanded="false" aria-label="Toggle navigation">
+                                        <!--i class="fa fa-bars"></i-->
+                                        <div class="hamburger">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </button>
+
+                                    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo"></a>
+                                </div>
+                                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                    <ul class="navbar-nav p-0">
+                                        <li class="nav-item ">
+                                            <a class="nav-link" href="#header" data-dismiss="modal">صفحه اصلی <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#about" data-dismiss="modal">درباره ما</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#cards" data-dismiss="modal">خدمات</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#slider" data-dismiss="modal">مطالب</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#connection" data-dismiss="modal">ارتباط باما</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </nav>
+
+                        </section>
                         <section class="cards">
                             <div class="container-fluid p-0">
                                 <div class="cover">
@@ -333,8 +386,9 @@
                             <section class="pack">
                                 <div class="container">
                                     <div class="row  justify-content-center">
-                                        <div class="col-12 col-md-10 box-col ">
+                                        <div class="col-12 col-md-10 box-col fade-right">
                                             <div class="text">
+                                                <button type="button" class="icon-close" data-dismiss="modal" data-toggle="tooltip" data-placement="left" title="بازگشت به صفحه قبل" style="z-index: 10910;"><i class="fa fa-chevron-circle-left"></i></button>
                                                 <div class="image">
                                                     <img src="assets/img/card2.svg" alt="">
                                                 </div>
@@ -342,7 +396,7 @@
                                                 <h5 class="title">خدمات ارزش افزوده مبتنی بر پیامک (SMS)</h5>
                                                </div>
                                         </div>
-                                        <div class="col-12 col-md-10 box-col">
+                                        <div class="col-12 col-md-10 box-col fade-up">
                                             <div class="text p-5">
                                                 <p class="caption">دیجیتال مارکتینگ یا بازاریابی دیجیتال اصطلاحی است که از دو دهه پیش تاکنون و همراه با گسترش و توسعه فناوری اطلاعات، افزایش زمان آنلاین بودن کاربران اینترنت، توسعه اپلیکیشن‌ها و امکانات تلفن‌های همراه و همچنین افزایش ضریب نفوذ اینترنت در جهان بسیار مورد توجه قرار گرفته است.</p>
                                                 <p class="caption">دیجیتال مارکتینگ یا بازاریابی دیجیتال در واقع مجموعه‌ای از ابزارها و فعالیت‌هایی است که برای بازاریابی محصولات و خدمات در فضای وب، اینترنت، موبایل و بطورکلی تمام فضاهای دیجیتال مورد استفاده قرار می‌گیرد.</p>
@@ -359,6 +413,41 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="container-fluid p-0">
+                                    <section class="footer">
+
+
+                                        <div class="container">
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="subject"><i class="fa fa-map-marker"></i>دانشگاه شریف، خیابان شهید تیموری، بن بست شالیزار، پلاک 4، واحد2</p>
+                                                        <p class="subject"><i class="fa fa-phone-square"></i>021-66098440</p>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="subject"><i class="fa fa-envelope"></i>info@ofoghplus.ir</p>
+                                                        <div class="list">
+                                                            <div class="item"><a href="#" class="link"><i class="fa fa-instagram"></i></a></div>
+                                                            <div class="item"><a href="#" class="link"><i class="fa fa-facebook"></i></a></div>
+                                                            <div class="item"><a href="#" class="link"><i class="fa fa-telegram"></i></a></div>
+                                                            <div class="item"><a href="#" class="link"><i class="fa fa-linkedin"></i></a></div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="container">
+                                            <div class="copy">
+                                                <small class="copyright">کليه حقوق اين سايت متعلق به شرکت افق گستر مبین شریف باشد.</small>
+                                                <small class="copyright">Copyright © 2019 by ofogh</small>
+                                            </div>
+                                        </div>
+
+                                    </section>
+                                </div>
                             </section>
                         </section>
                     </div>
@@ -370,10 +459,51 @@
             </div>
         </div>
         <!--=====================3====================-->
-        <div class="modal modal2 modal-fade p-0" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal modal3 modal-fade p-0" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
+                        <section class="navigation-modal">
+
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="navigate">
+                                    <button class="navbar-toggler bars" data-open="open" type="button" data-toggle="collapse"
+                                            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                                            aria-expanded="false" aria-label="Toggle navigation">
+                                        <!--i class="fa fa-bars"></i-->
+                                        <div class="hamburger">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </button>
+
+                                    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo"></a>
+                                </div>
+                                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                    <ul class="navbar-nav p-0">
+                                        <li class="nav-item ">
+                                            <a class="nav-link" href="#header" data-dismiss="modal">صفحه اصلی <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#about" data-dismiss="modal">درباره ما</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#cards" data-dismiss="modal">خدمات</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#slider" data-dismiss="modal">مطالب</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#connection" data-dismiss="modal">ارتباط باما</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </nav>
+
+                        </section>
                         <section class="cards">
                             <div class="container-fluid p-0">
                                 <div class="cover">
@@ -385,8 +515,9 @@
                             <section class="pack">
                                 <div class="container">
                                     <div class="row  justify-content-center">
-                                        <div class="col-12 col-md-10 box-col ">
+                                        <div class="col-12 col-md-10 box-col fade-right">
                                             <div class="text">
+                                                <button type="button" class="icon-close" data-dismiss="modal" data-toggle="tooltip" data-placement="left" title="بازگشت به صفحه قبل" style="z-index: 10910;"><i class="fa fa-chevron-circle-left"></i></button>
                                                 <div class="image">
                                                     <img src="assets/img/card3.svg" alt="">
                                                 </div>
@@ -394,7 +525,7 @@
                                                 <h5 class="title">طراحی اپلیکیشن و سایت</h5>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-10 box-col">
+                                        <div class="col-12 col-md-10 box-col fade-up">
                                             <div class="text p-5">
                                                 <p class="caption">امروزه با گسترش فناوری اطلاعات و هم‌پای آن دستگاه‌های هوشمند، داشتن یک سایت و اپلیکیشن موبایل برای کسب و کار‌های سنتی شناسنامه ای دیجیتال و برای کسب و کار‌های نوین عضوی تقریباً جدایی‌ناپذیر است.</p>
                                                 <p class="caption"> با نفوذ قابل توجه اینترنت و موبایل در جامعه بشری امروز، وب‌سایت‌ها و اپلیکیشن‌ها جایگاه ویژه‌ای در بین کسب و کارهای کنونی پیدا کرده‌اند. طراحی یک وب‌سایت و اپلیکیشن دقیقاً متناسب با کسب و کارتان برای مارکتینگ، برندینگ و تعاملی متقابل با مشتریانتان کمک شایانی خواهد بود. </p>
@@ -405,13 +536,45 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="container-fluid p-0">
+                                    <section class="footer">
+
+
+                                        <div class="container">
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="subject"><i class="fa fa-map-marker"></i>دانشگاه شریف، خیابان شهید تیموری، بن بست شالیزار، پلاک 4، واحد2</p>
+                                                        <p class="subject"><i class="fa fa-phone-square"></i>021-66098440</p>
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <p class="subject"><i class="fa fa-envelope"></i>info@ofoghplus.ir</p>
+                                                        <div class="list">
+                                                            <div class="item"><a href="#" class="link"><i class="fa fa-instagram"></i></a></div>
+                                                            <div class="item"><a href="#" class="link"><i class="fa fa-facebook"></i></a></div>
+                                                            <div class="item"><a href="#" class="link"><i class="fa fa-telegram"></i></a></div>
+                                                            <div class="item"><a href="#" class="link"><i class="fa fa-linkedin"></i></a></div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="container">
+                                            <div class="copy">
+                                                <small class="copyright">کليه حقوق اين سايت متعلق به شرکت افق گستر مبین شریف باشد.</small>
+                                                <small class="copyright">Copyright © 2019 by ofogh</small>
+                                            </div>
+                                        </div>
+
+                                    </section>
+                                </div>
                             </section>
                         </section>
                     </div>
-                    <!-- <div class="modal-footer">
-                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                         <button type="button" class="btn btn-primary">Save changes</button>
-                     </div>-->
+
                 </div>
             </div>
         </div>
@@ -556,7 +719,25 @@
 <script src="assets/js/jquery-3.4.0.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.js"></script>
+<script src="assets/animated-headline-master/js/modernizr.js"></script>
+<script src="assets/animated-headline-master/js/main.js"></script>
 <script src="assets/js/javascript.js"></script>
+<script>
 
+    /*function myLoad() {
+        var i = 0;
+        var txt = 'شرکت افق گستر مبین شریف';
+        var tt = '';
+        var speed = 60;
+        setTimeout(typeWriter,1900);
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("dert").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter,speed);
+            }
+        }
+    }*/
+</script>
 </body>
 </html>

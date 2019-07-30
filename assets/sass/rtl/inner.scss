@@ -26,21 +26,27 @@
 }
 .box-text{
   position:relative ;
+
   .title{
     font-family: Shabnam,IRANSans;
-margin: 0 0 30px;
-    @include font-source-sans(2.8rem, #fff, 600, 3.5rem);
-@include animation(.5s,.75s);
-
+    padding: 0;
+    margin: 0;
+    @include font-source-sans(3rem, #fff, 600, 1rem);
+@include animation(1s,1s);
     @include media-max($M){
 
       @include font-source-sans(2rem, #fff, 500, 3rem);
-
     }
   }
+
+  .cd-intro{
+    @include animation(1.85s,.90s);
+  }
   .caption{
+
+    margin-top:10px;
     @include font-source-sans($small-font, #ffffffd9, 400,  1.5rem);
-    @include animation(1.25s,.75s);
+    @include animation(3s,.75s);
 
     @include media-max($M){
 
@@ -51,14 +57,15 @@ margin: 0 0 30px;
     content: '';
     width: 150px;
     height: 3px;
+
   @include gradient(horizontal,transparent,#fcaf17);
     position: absolute;
     bottom:-40px;
     right:calc(50% - 75px);
     opacity: 0;
-    @include animation(2s,.5s);
-@include keyframe;
+    @include animation(3.80s,.5s);
 
+@include keyframe;
   }
 }
 }

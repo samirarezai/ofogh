@@ -50,17 +50,98 @@
     z-index: 1070;
     font-size: $small-font;
     position: fixed;
+    overflow: hidden;
     @include transition;
+    /*=======================================================================*/
+    .ripple1-background{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .circle{
+      position: absolute;
+      border-radius: 50%;
+      background: #ffffff2e;
+      animation: ripple 25s infinite;
+      box-shadow: 0px 0px 1px 0px #508fb9;
+    }
+
+    .small{
+      width:50px;
+      height: 50px;
+      left: -25px;
+      bottom: -25px;
+    }
+
+    .medium{
+      width: 100px;
+      height: 100px;
+      left: -50px;
+      bottom: -50px;
+    }
+
+    .large{
+      width: 150px;
+      height:150px;
+      left: -75px;
+      bottom: -75px;
+    }
+    .xlarge{
+      width: 200px;
+      height: 200px;
+      left: -100px;
+      bottom: -100px;
+    }
+    .xxlarge{
+      width:250px;
+      height: 250px;
+      left: -125px;
+      bottom: -125px;
+    }
+
+    .shade1{
+      opacity: 0.2;
+    }
+    .shade2{
+      opacity: 0.4;
+    }
+
+    .shade3{
+      opacity: 0.55;
+    }
+
+    .shade4{
+      opacity: .65;
+    }
+
+    .shade5{
+      opacity: 0.9;
+    }
+
+    @keyframes ripple{
+      0%{
+        transform: scale(0.8);
+      }
+
+      50%{
+        transform: scale(2);
+      }
+      100%{
+        transform: scale(0.8);
+      }
+    }
+    /*=======================================================================*/
     @include media-min($L) {
       background-color: #fff;
     }
-
     .navbar {
+
       @include transition;
       @include media-min($L) {
         @include flex(row-reverse, nowrap, center, space-between);
         padding: 5px 125px;
       }
+
 
       .navigate {
         width: 100%;
@@ -150,78 +231,19 @@
             }
           }
         }
-
         .navbar-brand {
-          /*   .attention {*/
-          /*  overflow: hidden;
-            position: relative;
-          .ripple-background{
-            position: absolute;
-            z-index: -1;
-            top:55px;
-            right:55px;
-            .circle{
-              position: absolute;
-              border-radius: 50%;
-              background: #fff;
-              animation: ripple 25s infinite;
-              box-shadow: 0px 0px 1px 0px #508fb9;
+          @include flex(row, nowrap, center, space-between);
+          img.name-logo {
+            max-width: 80px;
+            width: 100%;
+            height: auto;
+            padding-right: 0;
+            @include transition;
+            @include media-min($L) {
+              max-width: 100px;
             }
-
-            .small{
-              width: 10px;
-              height: 10px;
-              left:20px;
-              bottom: 20px;
-            }
-            .medium{
-              width: 20px;
-              height: 20px;
-              left:15px;
-              bottom: 15px;
-            }
-            .large{
-              width: 30px;
-              height: 30px;
-              left: 10px;
-              bottom: 10px;
-            }
-            .xlarge{
-              width: 40px;
-              height: 40px;
-              left: 5px;
-              bottom: 5px;
-            }
-            .xxlarge{
-              width: 50px;
-              height: 50px;
-              left: 50%;
-              bottom: 50%;
-
-            }
-            .shade1{
-              opacity: 0.2;
-            }
-            .shade2{
-              opacity: 0.4;
-            }
-            .shade3{
-              opacity: 0.55;
-            }
-
-            .shade4{
-              opacity: .65;
-            }
-
-            .shade5{
-              opacity: 0.9;
-            }
-            @include animations(1s,1s,l1,infinite);
-
-            @include ripple;
           }
-            */
-          img {
+          img.logo {
             max-width: 50px;
             width: 100%;
             height: auto;
@@ -280,11 +302,15 @@
 
         .navigate {
           .navbar-brand {
-            img {
+            img.name-logo{
+              max-width: 80px;
+            }
+            img.logo {
               @include transition;
               max-width: 50px;
             }
           }
+
         }
       }
     }
