@@ -10045,7 +10045,7 @@ textarea {
   .header .navigation .navbar .navbar-collapse .navbar-nav .nav-item {
     font-size: 0.9rem;
     font-weight: 500;
-    border-bottom: 1px solid rgba(139, 41, 128, 0.2);
+    border-bottom: 1px solid #fcaf1714;
   }
   .header .navigation .navbar .navbar-collapse .navbar-nav .nav-item:last-child {
     border-bottom: 0px solid #8b2980;
@@ -10058,6 +10058,11 @@ textarea {
   -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
   -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
   transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
+}
+@media screen and (max-width: 992px) {
+  .header .navigation .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: #fff;
+  }
 }
 .header .navigation .navbar .navbar-collapse .navbar-nav .nav-item .active {
   -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
@@ -10439,7 +10444,7 @@ textarea {
   font-size: 3rem;
   color: #fff;
   font-weight: 600;
-  line-height: 1rem;
+  line-height: 3.1rem;
   -webkit-animation-delay: 1s;
   -webkit-animation-duration: 1s;
   /*-webkit-animation-name: $animation;*/
@@ -10463,7 +10468,7 @@ textarea {
 }
 @media screen and (max-width: 768px) {
   .inner .box-text .title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #fff;
     font-weight: 500;
     line-height: 3rem;
@@ -10557,12 +10562,12 @@ textarea {
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -webkit-animation-name: l;
-  -moz-animation-name: l;
-  -o-animation-name: l;
-  animation-name: l;
+  -webkit-animation-name: op;
+  -moz-animation-name: op;
+  -o-animation-name: op;
+  animation-name: op;
 }
-@-webkit-keyframes l {
+@-webkit-keyframes op {
   0% {
     opacity: 0;
   }
@@ -10570,7 +10575,7 @@ textarea {
     opacity: 1;
   }
 }
-@-moz-keyframes l {
+@-moz-keyframes op {
   0% {
     opacity: 0;
   }
@@ -10578,7 +10583,7 @@ textarea {
     opacity: 1;
   }
 }
-@-o-keyframes l {
+@-o-keyframes op {
   0% {
     opacity: 0;
   }
@@ -10586,7 +10591,7 @@ textarea {
     opacity: 1;
   }
 }
-@keyframes l {
+@keyframes op {
   0% {
     opacity: 0;
   }
@@ -10604,9 +10609,14 @@ textarea {
 }
 */
 .about {
-  text-align: right;
+  text-align: center;
   margin-top: 50px;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .about {
+    text-align: right;
+  }
 }
 .about .row .box-col {
   display: -webkit-box;
@@ -10639,7 +10649,8 @@ textarea {
   content: "";
   width: 50%;
   height: 50%;
-  background: url("../img/dotss.png") repeat;
+  /*background: url("../img/dotss.png") repeat;*/
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' viewBox='0 0 192 192'%3E%3Cpath fill='%23e7e4e6' fill-opacity='1' d='M192 15v2a11 11 0 0 0-11 11c0 1.94 1.16 4.75 2.53 6.11l2.36 2.36a6.93 6.93 0 0 1 1.22 7.56l-.43.84a8.08 8.08 0 0 1-6.66 4.13H145v35.02a6.1 6.1 0 0 0 3.03 4.87l.84.43c1.58.79 4 .4 5.24-.85l2.36-2.36a12.04 12.04 0 0 1 7.51-3.11 13 13 0 1 1 .02 26 12 12 0 0 1-7.53-3.11l-2.36-2.36a4.93 4.93 0 0 0-5.24-.85l-.84.43a6.1 6.1 0 0 0-3.03 4.87V143h35.02a8.08 8.08 0 0 1 6.66 4.13l.43.84a6.91 6.91 0 0 1-1.22 7.56l-2.36 2.36A10.06 10.06 0 0 0 181 164a11 11 0 0 0 11 11v2a13 13 0 0 1-13-13 12 12 0 0 1 3.11-7.53l2.36-2.36a4.93 4.93 0 0 0 .85-5.24l-.43-.84a6.1 6.1 0 0 0-4.87-3.03H145v35.02a8.08 8.08 0 0 1-4.13 6.66l-.84.43a6.91 6.91 0 0 1-7.56-1.22l-2.36-2.36A10.06 10.06 0 0 0 124 181a11 11 0 0 0-11 11h-2a13 13 0 0 1 13-13c2.47 0 5.79 1.37 7.53 3.11l2.36 2.36a4.94 4.94 0 0 0 5.24.85l.84-.43a6.1 6.1 0 0 0 3.03-4.87V145h-35.02a8.08 8.08 0 0 1-6.66-4.13l-.43-.84a6.91 6.91 0 0 1 1.22-7.56l2.36-2.36A10.06 10.06 0 0 0 107 124a11 11 0 0 0-22 0c0 1.94 1.16 4.75 2.53 6.11l2.36 2.36a6.93 6.93 0 0 1 1.22 7.56l-.43.84a8.08 8.08 0 0 1-6.66 4.13H49v35.02a6.1 6.1 0 0 0 3.03 4.87l.84.43c1.58.79 4 .4 5.24-.85l2.36-2.36a12.04 12.04 0 0 1 7.51-3.11A13 13 0 0 1 81 192h-2a11 11 0 0 0-11-11c-1.94 0-4.75 1.16-6.11 2.53l-2.36 2.36a6.93 6.93 0 0 1-7.56 1.22l-.84-.43a8.08 8.08 0 0 1-4.13-6.66V145H11.98a6.1 6.1 0 0 0-4.87 3.03l-.43.84c-.79 1.58-.4 4 .85 5.24l2.36 2.36a12.04 12.04 0 0 1 3.11 7.51A13 13 0 0 1 0 177v-2a11 11 0 0 0 11-11c0-1.94-1.16-4.75-2.53-6.11l-2.36-2.36a6.93 6.93 0 0 1-1.22-7.56l.43-.84a8.08 8.08 0 0 1 6.66-4.13H47v-35.02a6.1 6.1 0 0 0-3.03-4.87l-.84-.43c-1.59-.8-4-.4-5.24.85l-2.36 2.36A12 12 0 0 1 28 109a13 13 0 1 1 0-26c2.47 0 5.79 1.37 7.53 3.11l2.36 2.36a4.94 4.94 0 0 0 5.24.85l.84-.43A6.1 6.1 0 0 0 47 84.02V49H11.98a8.08 8.08 0 0 1-6.66-4.13l-.43-.84a6.91 6.91 0 0 1 1.22-7.56l2.36-2.36A10.06 10.06 0 0 0 11 28 11 11 0 0 0 0 17v-2a13 13 0 0 1 13 13c0 2.47-1.37 5.79-3.11 7.53l-2.36 2.36a4.94 4.94 0 0 0-.85 5.24l.43.84A6.1 6.1 0 0 0 11.98 47H47V11.98a8.08 8.08 0 0 1 4.13-6.66l.84-.43a6.91 6.91 0 0 1 7.56 1.22l2.36 2.36A10.06 10.06 0 0 0 68 11 11 11 0 0 0 79 0h2a13 13 0 0 1-13 13 12 12 0 0 1-7.53-3.11l-2.36-2.36a4.93 4.93 0 0 0-5.24-.85l-.84.43A6.1 6.1 0 0 0 49 11.98V47h35.02a8.08 8.08 0 0 1 6.66 4.13l.43.84a6.91 6.91 0 0 1-1.22 7.56l-2.36 2.36A10.06 10.06 0 0 0 85 68a11 11 0 0 0 22 0c0-1.94-1.16-4.75-2.53-6.11l-2.36-2.36a6.93 6.93 0 0 1-1.22-7.56l.43-.84a8.08 8.08 0 0 1 6.66-4.13H143V11.98a6.1 6.1 0 0 0-3.03-4.87l-.84-.43c-1.59-.8-4-.4-5.24.85l-2.36 2.36A12 12 0 0 1 124 13a13 13 0 0 1-13-13h2a11 11 0 0 0 11 11c1.94 0 4.75-1.16 6.11-2.53l2.36-2.36a6.93 6.93 0 0 1 7.56-1.22l.84.43a8.08 8.08 0 0 1 4.13 6.66V47h35.02a6.1 6.1 0 0 0 4.87-3.03l.43-.84c.8-1.59.4-4-.85-5.24l-2.36-2.36A12 12 0 0 1 179 28a13 13 0 0 1 13-13zM84.02 143a6.1 6.1 0 0 0 4.87-3.03l.43-.84c.8-1.59.4-4-.85-5.24l-2.36-2.36A12 12 0 0 1 83 124a13 13 0 1 1 26 0c0 2.47-1.37 5.79-3.11 7.53l-2.36 2.36a4.94 4.94 0 0 0-.85 5.24l.43.84a6.1 6.1 0 0 0 4.87 3.03H143v-35.02a8.08 8.08 0 0 1 4.13-6.66l.84-.43a6.91 6.91 0 0 1 7.56 1.22l2.36 2.36A10.06 10.06 0 0 0 164 107a11 11 0 0 0 0-22c-1.94 0-4.75 1.16-6.11 2.53l-2.36 2.36a6.93 6.93 0 0 1-7.56 1.22l-.84-.43a8.08 8.08 0 0 1-4.13-6.66V49h-35.02a6.1 6.1 0 0 0-4.87 3.03l-.43.84c-.79 1.58-.4 4 .85 5.24l2.36 2.36a12.04 12.04 0 0 1 3.11 7.51A13 13 0 1 1 83 68a12 12 0 0 1 3.11-7.53l2.36-2.36a4.93 4.93 0 0 0 .85-5.24l-.43-.84A6.1 6.1 0 0 0 84.02 49H49v35.02a8.08 8.08 0 0 1-4.13 6.66l-.84.43a6.91 6.91 0 0 1-7.56-1.22l-2.36-2.36A10.06 10.06 0 0 0 28 85a11 11 0 0 0 0 22c1.94 0 4.75-1.16 6.11-2.53l2.36-2.36a6.93 6.93 0 0 1 7.56-1.22l.84.43a8.08 8.08 0 0 1 4.13 6.66V143h35.02z'%3E%3C/path%3E%3C/svg%3E");
   position: absolute;
   top: 0;
   right: 0;
@@ -10650,12 +10661,17 @@ textarea {
 .about .row .box-col .text {
   background-color: #fff;
   align-self: center;
-  margin-right: 20%;
+  margin: 0;
   padding: 20px;
   z-index: 12;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .about .row .box-col .text {
+    margin-right: 20%;
+  }
 }
 .about .row .box-col .text .title {
   font-family: Shabnam;
@@ -10666,23 +10682,56 @@ textarea {
   line-height: 2.1;
   position: relative;
 }
-.about .row .box-col .text .title:after {
-  content: "";
-  width: 100px;
-  height: 2px;
-  background: transparent;
-  background: -webkit-linear-gradient(left, transparent, #fcaf17);
-  background: linear-gradient(to right, transparent, #fcaf17);
-  position: absolute;
-  bottom: 0px;
-  right: 0;
-}
 .about .row .box-col .text .caption {
   font-size: 1rem;
   color: #3a3e3d;
   font-weight: 400;
   line-height: 2.1rem;
-  text-align: right;
+  text-align: justify;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-duration: 1.25s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 3s;
+  -moz-animation-duration: 1.25s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 3s;
+  -o-animation-duration: 1.25s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 3s;
+  animation-duration: 1.25s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+}
+@media screen and (max-width: 768px) {
+  .about .row .box-col .text .caption {
+    -webkit-animation-delay: 1.25s;
+    -webkit-animation-duration: 1.25s;
+    /*-webkit-animation-name: $animation;*/
+    -webkit-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    -moz-animation-delay: 1.25s;
+    -moz-animation-duration: 1.25s;
+    /*  -moz-animation-name: $animation;*/
+    -moz-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    -o-animation-delay: 1.25s;
+    -o-animation-duration: 1.25s;
+    /* -o-animation-name: $animation;*/
+    -o-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    animation-delay: 1.25s;
+    animation-duration: 1.25s;
+    /*  animation-name: $animation;*/
+    animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+  }
 }
 .about .row .image {
   position: relative;
@@ -10716,6 +10765,9 @@ textarea {
   height: auto;
   top: 0;
   left: 0;
+  -webkit-box-shadow: 4px 4px 10px 2px #3a3e3d5e;
+  -moz-box-shadow: 4px 4px 10px 2px #3a3e3d5e;
+  box-shadow: 4px 4px 10px 2px #3a3e3d5e;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -10744,6 +10796,30 @@ textarea {
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
 }
+@media screen and (max-width: 768px) {
+  .about .row .image img:nth-child(1) {
+    -webkit-animation-delay: 2.5s;
+    -webkit-animation-duration: 1.25s;
+    /*-webkit-animation-name: $animation;*/
+    -webkit-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    -moz-animation-delay: 2.5s;
+    -moz-animation-duration: 1.25s;
+    /*  -moz-animation-name: $animation;*/
+    -moz-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    -o-animation-delay: 2.5s;
+    -o-animation-duration: 1.25s;
+    /* -o-animation-name: $animation;*/
+    -o-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    animation-delay: 2.5s;
+    animation-duration: 1.25s;
+    /*  animation-name: $animation;*/
+    animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+  }
+}
 .about .row .image img:nth-child(2) {
   top: 46%;
   left: 44%;
@@ -10767,6 +10843,30 @@ textarea {
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
+}
+@media screen and (max-width: 768px) {
+  .about .row .image img:nth-child(2) {
+    -webkit-animation-delay: 2.75s;
+    -webkit-animation-duration: 1.25s;
+    /*-webkit-animation-name: $animation;*/
+    -webkit-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    -moz-animation-delay: 2.75s;
+    -moz-animation-duration: 1.25s;
+    /*  -moz-animation-name: $animation;*/
+    -moz-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    -o-animation-delay: 2.75s;
+    -o-animation-duration: 1.25s;
+    /* -o-animation-name: $animation;*/
+    -o-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    animation-delay: 2.75s;
+    animation-duration: 1.25s;
+    /*  animation-name: $animation;*/
+    animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+  }
 }
 .about .row .image img:nth-child(3) {
   top: 16%;
@@ -10792,6 +10892,30 @@ textarea {
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
 }
+@media screen and (max-width: 768px) {
+  .about .row .image img:nth-child(3) {
+    -webkit-animation-delay: 3s;
+    -webkit-animation-duration: 1.25s;
+    /*-webkit-animation-name: $animation;*/
+    -webkit-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    -moz-animation-delay: 3s;
+    -moz-animation-duration: 1.25s;
+    /*  -moz-animation-name: $animation;*/
+    -moz-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    -o-animation-delay: 3s;
+    -o-animation-duration: 1.25s;
+    /* -o-animation-name: $animation;*/
+    -o-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    animation-delay: 3s;
+    animation-duration: 1.25s;
+    /*  animation-name: $animation;*/
+    animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+  }
+}
 .about .row .image img:nth-child(4) {
   top: 0%;
   left: 35%;
@@ -10816,8 +10940,32 @@ textarea {
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
 }
+@media screen and (max-width: 768px) {
+  .about .row .image img:nth-child(4) {
+    -webkit-animation-delay: 3.25s;
+    -webkit-animation-duration: 1.25s;
+    /*-webkit-animation-name: $animation;*/
+    -webkit-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    -moz-animation-delay: 3.25s;
+    -moz-animation-duration: 1.25s;
+    /*  -moz-animation-name: $animation;*/
+    -moz-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    -o-animation-delay: 3.25s;
+    -o-animation-duration: 1.25s;
+    /* -o-animation-name: $animation;*/
+    -o-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    animation-delay: 3.25s;
+    animation-duration: 1.25s;
+    /*  animation-name: $animation;*/
+    animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+  }
+}
 .about .row .image img:nth-child(5) {
-  top: 52%;
+  top: 37%;
   left: 10%;
   -webkit-animation-delay: 2.25s;
   -webkit-animation-duration: 1s;
@@ -10840,6 +10988,109 @@ textarea {
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
 }
+@media screen and (max-width: 768px) {
+  .about .row .image img:nth-child(5) {
+    -webkit-animation-delay: 3.5s;
+    -webkit-animation-duration: 1.25s;
+    /*-webkit-animation-name: $animation;*/
+    -webkit-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    -moz-animation-delay: 3.5s;
+    -moz-animation-duration: 1.25s;
+    /*  -moz-animation-name: $animation;*/
+    -moz-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    -o-animation-delay: 3.5s;
+    -o-animation-duration: 1.25s;
+    /* -o-animation-name: $animation;*/
+    -o-animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+    animation-delay: 3.5s;
+    animation-duration: 1.25s;
+    /*  animation-name: $animation;*/
+    animation-fill-mode: both;
+    /* this prevents the animation from restarting! */
+  }
+}
+
+.about.ok .text {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.about.ok .text .title:after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background: transparent;
+  background: -webkit-linear-gradient(left, transparent, #fcaf17);
+  background: linear-gradient(to right, transparent, #fcaf17);
+  position: absolute;
+  bottom: 0px;
+  right: calc(50% - 42px);
+  opacity: 0;
+  -webkit-animation-delay: 2.5s;
+  -webkit-animation-duration: 0.5s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 2.5s;
+  -moz-animation-duration: 0.5s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 2.5s;
+  -o-animation-duration: 0.5s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 2.5s;
+  animation-duration: 0.5s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -webkit-animation-name: op;
+  -moz-animation-name: op;
+  -o-animation-name: op;
+  animation-name: op;
+}
+@-webkit-keyframes op {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes op {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes op {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes op {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about.ok .text .title:after {
+    right: 0;
+  }
+}
 
 /*
 input,
@@ -10853,11 +11104,17 @@ textarea {
   position: relative;
   margin: 100px 0 0;
   padding-bottom: 350px;
-  background: url("../img/dotss.png") repeat;
+  /*background: url("../img/dotss.png") repeat;*/
+  /* background: linear-gradient(90deg, rgba(157, 121, 158, 0.45) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(90deg, rgba(119, 81, 135, 0.8) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(90deg, rgba(252, 175, 23, 0.38) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(90deg, rgba(106, 69, 124, 0.85) 50%, rgba(255, 255, 255, 0) 50%);
+   background-size: 7em 7em, 5em 5em, 3em 3em, 1em 1em;
+   background-color: #996d9a;
+   font: 10px/1.4 'Trebuchet MS', Verdana, sans-serif;*/
+  background-color: #fdfcff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' viewBox='0 0 192 192'%3E%3Cpath fill='%23e7e4e6' fill-opacity='1' d='M192 15v2a11 11 0 0 0-11 11c0 1.94 1.16 4.75 2.53 6.11l2.36 2.36a6.93 6.93 0 0 1 1.22 7.56l-.43.84a8.08 8.08 0 0 1-6.66 4.13H145v35.02a6.1 6.1 0 0 0 3.03 4.87l.84.43c1.58.79 4 .4 5.24-.85l2.36-2.36a12.04 12.04 0 0 1 7.51-3.11 13 13 0 1 1 .02 26 12 12 0 0 1-7.53-3.11l-2.36-2.36a4.93 4.93 0 0 0-5.24-.85l-.84.43a6.1 6.1 0 0 0-3.03 4.87V143h35.02a8.08 8.08 0 0 1 6.66 4.13l.43.84a6.91 6.91 0 0 1-1.22 7.56l-2.36 2.36A10.06 10.06 0 0 0 181 164a11 11 0 0 0 11 11v2a13 13 0 0 1-13-13 12 12 0 0 1 3.11-7.53l2.36-2.36a4.93 4.93 0 0 0 .85-5.24l-.43-.84a6.1 6.1 0 0 0-4.87-3.03H145v35.02a8.08 8.08 0 0 1-4.13 6.66l-.84.43a6.91 6.91 0 0 1-7.56-1.22l-2.36-2.36A10.06 10.06 0 0 0 124 181a11 11 0 0 0-11 11h-2a13 13 0 0 1 13-13c2.47 0 5.79 1.37 7.53 3.11l2.36 2.36a4.94 4.94 0 0 0 5.24.85l.84-.43a6.1 6.1 0 0 0 3.03-4.87V145h-35.02a8.08 8.08 0 0 1-6.66-4.13l-.43-.84a6.91 6.91 0 0 1 1.22-7.56l2.36-2.36A10.06 10.06 0 0 0 107 124a11 11 0 0 0-22 0c0 1.94 1.16 4.75 2.53 6.11l2.36 2.36a6.93 6.93 0 0 1 1.22 7.56l-.43.84a8.08 8.08 0 0 1-6.66 4.13H49v35.02a6.1 6.1 0 0 0 3.03 4.87l.84.43c1.58.79 4 .4 5.24-.85l2.36-2.36a12.04 12.04 0 0 1 7.51-3.11A13 13 0 0 1 81 192h-2a11 11 0 0 0-11-11c-1.94 0-4.75 1.16-6.11 2.53l-2.36 2.36a6.93 6.93 0 0 1-7.56 1.22l-.84-.43a8.08 8.08 0 0 1-4.13-6.66V145H11.98a6.1 6.1 0 0 0-4.87 3.03l-.43.84c-.79 1.58-.4 4 .85 5.24l2.36 2.36a12.04 12.04 0 0 1 3.11 7.51A13 13 0 0 1 0 177v-2a11 11 0 0 0 11-11c0-1.94-1.16-4.75-2.53-6.11l-2.36-2.36a6.93 6.93 0 0 1-1.22-7.56l.43-.84a8.08 8.08 0 0 1 6.66-4.13H47v-35.02a6.1 6.1 0 0 0-3.03-4.87l-.84-.43c-1.59-.8-4-.4-5.24.85l-2.36 2.36A12 12 0 0 1 28 109a13 13 0 1 1 0-26c2.47 0 5.79 1.37 7.53 3.11l2.36 2.36a4.94 4.94 0 0 0 5.24.85l.84-.43A6.1 6.1 0 0 0 47 84.02V49H11.98a8.08 8.08 0 0 1-6.66-4.13l-.43-.84a6.91 6.91 0 0 1 1.22-7.56l2.36-2.36A10.06 10.06 0 0 0 11 28 11 11 0 0 0 0 17v-2a13 13 0 0 1 13 13c0 2.47-1.37 5.79-3.11 7.53l-2.36 2.36a4.94 4.94 0 0 0-.85 5.24l.43.84A6.1 6.1 0 0 0 11.98 47H47V11.98a8.08 8.08 0 0 1 4.13-6.66l.84-.43a6.91 6.91 0 0 1 7.56 1.22l2.36 2.36A10.06 10.06 0 0 0 68 11 11 11 0 0 0 79 0h2a13 13 0 0 1-13 13 12 12 0 0 1-7.53-3.11l-2.36-2.36a4.93 4.93 0 0 0-5.24-.85l-.84.43A6.1 6.1 0 0 0 49 11.98V47h35.02a8.08 8.08 0 0 1 6.66 4.13l.43.84a6.91 6.91 0 0 1-1.22 7.56l-2.36 2.36A10.06 10.06 0 0 0 85 68a11 11 0 0 0 22 0c0-1.94-1.16-4.75-2.53-6.11l-2.36-2.36a6.93 6.93 0 0 1-1.22-7.56l.43-.84a8.08 8.08 0 0 1 6.66-4.13H143V11.98a6.1 6.1 0 0 0-3.03-4.87l-.84-.43c-1.59-.8-4-.4-5.24.85l-2.36 2.36A12 12 0 0 1 124 13a13 13 0 0 1-13-13h2a11 11 0 0 0 11 11c1.94 0 4.75-1.16 6.11-2.53l2.36-2.36a6.93 6.93 0 0 1 7.56-1.22l.84.43a8.08 8.08 0 0 1 4.13 6.66V47h35.02a6.1 6.1 0 0 0 4.87-3.03l.43-.84c.8-1.59.4-4-.85-5.24l-2.36-2.36A12 12 0 0 1 179 28a13 13 0 0 1 13-13zM84.02 143a6.1 6.1 0 0 0 4.87-3.03l.43-.84c.8-1.59.4-4-.85-5.24l-2.36-2.36A12 12 0 0 1 83 124a13 13 0 1 1 26 0c0 2.47-1.37 5.79-3.11 7.53l-2.36 2.36a4.94 4.94 0 0 0-.85 5.24l.43.84a6.1 6.1 0 0 0 4.87 3.03H143v-35.02a8.08 8.08 0 0 1 4.13-6.66l.84-.43a6.91 6.91 0 0 1 7.56 1.22l2.36 2.36A10.06 10.06 0 0 0 164 107a11 11 0 0 0 0-22c-1.94 0-4.75 1.16-6.11 2.53l-2.36 2.36a6.93 6.93 0 0 1-7.56 1.22l-.84-.43a8.08 8.08 0 0 1-4.13-6.66V49h-35.02a6.1 6.1 0 0 0-4.87 3.03l-.43.84c-.79 1.58-.4 4 .85 5.24l2.36 2.36a12.04 12.04 0 0 1 3.11 7.51A13 13 0 1 1 83 68a12 12 0 0 1 3.11-7.53l2.36-2.36a4.93 4.93 0 0 0 .85-5.24l-.43-.84A6.1 6.1 0 0 0 84.02 49H49v35.02a8.08 8.08 0 0 1-4.13 6.66l-.84.43a6.91 6.91 0 0 1-7.56-1.22l-2.36-2.36A10.06 10.06 0 0 0 28 85a11 11 0 0 0 0 22c1.94 0 4.75-1.16 6.11-2.53l2.36-2.36a6.93 6.93 0 0 1 7.56-1.22l.84.43a8.08 8.08 0 0 1 4.13 6.66V143h35.02z'%3E%3C/path%3E%3C/svg%3E");
 }
 @media screen and (max-width: 768px) {
   .cards {
-    padding-top: 25px;
+    padding-top: 0px;
     padding-bottom: 25px;
   }
 }
@@ -10866,12 +11123,7 @@ textarea {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../img/about3.jpg);
-}
-@media screen and (max-width: 768px) {
-  .cards .cover {
-    display: none;
-  }
+  background-image: url(../img/bb.jpg);
 }
 .cards .cover .overlay {
   position: relative;
@@ -10905,6 +11157,11 @@ textarea {
   justify-content: center;
   -ms-flex-pack: center;
 }
+@media screen and (max-width: 768px) {
+  .cards .cover .overlay {
+    height: 30vh;
+  }
+}
 .cards .cover .overlay .head {
   text-align: center;
 }
@@ -10932,7 +11189,7 @@ textarea {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: rgba(103, 27, 94, 0.6);
+  background: rgba(103, 27, 94, 0.67);
   top: 0;
   right: 0;
   z-index: -1;
@@ -11095,6 +11352,34 @@ textarea {
   -moz-border-radius: 50%;
   border-radius: 50%;
   padding: 10px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
 }
 .pack .row .box-col .text .image img {
   max-width: 40px;
@@ -11116,11 +11401,12 @@ textarea {
   color: #3a3e3d;
   font-weight: 400;
   line-height: 1.7;
+  text-align: justify;
 }
 .pack .row .box-col .text .btn-card {
   background-color: transparent;
   color: #8b2980;
-  padding: 5px 20px;
+  padding: 3px 20px;
   -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
   -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
   -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
@@ -11130,6 +11416,15 @@ textarea {
   -moz-border-radius: 20px;
   border-radius: 20px;
   border: 1px solid #8b2980;
+  transition: opacity 0.1s;
+}
+.pack .row .box-col .text .btn-card:after {
+  content: "";
+  font-family: FontAwesome;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  margin-right: 0;
+  opacity: 0;
 }
 .pack .row .box-col .text .btn-card:focus {
   outline: 0px dotted;
@@ -11138,6 +11433,106 @@ textarea {
 .pack .row .box-col .text .btn-card:hover {
   background-color: #8b2980;
   color: #fff;
+}
+.pack .row .box-col .text .btn-card:hover:after {
+  margin-right: 10px;
+  opacity: 1;
+}
+.pack .row .box-col.style-pack .text .image {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 0.5s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 0.5s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0s;
+  -o-animation-duration: 0.5s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -webkit-animation-name: l;
+  -moz-animation-name: l;
+  -o-animation-name: l;
+  animation-name: l;
+}
+@-webkit-keyframes l {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes l {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes l {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes l {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.pack.not-modal .text .caption {
+  height: 80px;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
 /*
@@ -11150,7 +11545,7 @@ textarea {
 */
 .slider {
   width: 100%;
-  background-color: #dcc4d9;
+  background-color: #fff;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -11205,9 +11600,13 @@ textarea {
 }
 .slider .container .carousel .carousel-inner .carousel-item {
   color: #444;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 .slider .container .carousel .carousel-inner .carousel-item .row .box-col {
-  margin-top: 25px;
+  margin: 25px;
+  padding: 5px 5px 5px 55px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -11217,10 +11616,10 @@ textarea {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-flex-wrap: nowrap;
-  -moz-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
@@ -11232,6 +11631,16 @@ textarea {
   justify-content: center;
   -ms-flex-pack: center;
   height: 100%;
+  width: 90%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .slider .container .carousel .carousel-inner .carousel-item .row .box-col {
+    margin: 40px 25px 25px;
+    padding: 0 0 10px 50px;
+  }
 }
 .slider .container .carousel .carousel-inner .carousel-item .row .box-col .question {
   font-family: Shabnam;
@@ -11249,7 +11658,7 @@ textarea {
 }
 .slider .container .carousel .carousel-control-prev {
   left: -150px;
-  bottom: 50%;
+  bottom: 0%;
 }
 @media screen and (min-width: 576px) {
   .slider .container .carousel .carousel-control-prev {
@@ -11258,7 +11667,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .slider .container .carousel .carousel-control-prev {
-    left: -100px;
+    left: -85px;
   }
 }
 .slider .container .carousel .carousel-control-prev .carousel-control-prev-icon {
@@ -11267,7 +11676,7 @@ textarea {
   height: 30px;
 }
 .slider .container .carousel .carousel-control-next {
-  bottom: 50%;
+  bottom: 0%;
   right: -150px;
 }
 @media screen and (min-width: 576px) {
@@ -11277,7 +11686,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .slider .container .carousel .carousel-control-next {
-    right: -100px;
+    right: -85px;
   }
 }
 .slider .container .carousel .carousel-control-next .carousel-control-next-icon {
@@ -11317,7 +11726,7 @@ textarea {
   -webkit-border-radius: 50% 50% 47% 53%/3% 3% 97% 97%;
   -moz-border-radius: 50% 50% 47% 53%/3% 3% 97% 97%;
   border-radius: 50% 50% 47% 53%/3% 3% 97% 97%;
-  background-color: #dcc4d9;
+  background-color: #fff;
   height: 25px;
   width: 110%;
   top: -3px;
@@ -11550,6 +11959,7 @@ textarea {
   z-index: 1080;
   border: 0;
   background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' viewBox='0 0 192 192'%3E%3Cpath fill='%23e7e4e6' fill-opacity='1' d='M192 15v2a11 11 0 0 0-11 11c0 1.94 1.16 4.75 2.53 6.11l2.36 2.36a6.93 6.93 0 0 1 1.22 7.56l-.43.84a8.08 8.08 0 0 1-6.66 4.13H145v35.02a6.1 6.1 0 0 0 3.03 4.87l.84.43c1.58.79 4 .4 5.24-.85l2.36-2.36a12.04 12.04 0 0 1 7.51-3.11 13 13 0 1 1 .02 26 12 12 0 0 1-7.53-3.11l-2.36-2.36a4.93 4.93 0 0 0-5.24-.85l-.84.43a6.1 6.1 0 0 0-3.03 4.87V143h35.02a8.08 8.08 0 0 1 6.66 4.13l.43.84a6.91 6.91 0 0 1-1.22 7.56l-2.36 2.36A10.06 10.06 0 0 0 181 164a11 11 0 0 0 11 11v2a13 13 0 0 1-13-13 12 12 0 0 1 3.11-7.53l2.36-2.36a4.93 4.93 0 0 0 .85-5.24l-.43-.84a6.1 6.1 0 0 0-4.87-3.03H145v35.02a8.08 8.08 0 0 1-4.13 6.66l-.84.43a6.91 6.91 0 0 1-7.56-1.22l-2.36-2.36A10.06 10.06 0 0 0 124 181a11 11 0 0 0-11 11h-2a13 13 0 0 1 13-13c2.47 0 5.79 1.37 7.53 3.11l2.36 2.36a4.94 4.94 0 0 0 5.24.85l.84-.43a6.1 6.1 0 0 0 3.03-4.87V145h-35.02a8.08 8.08 0 0 1-6.66-4.13l-.43-.84a6.91 6.91 0 0 1 1.22-7.56l2.36-2.36A10.06 10.06 0 0 0 107 124a11 11 0 0 0-22 0c0 1.94 1.16 4.75 2.53 6.11l2.36 2.36a6.93 6.93 0 0 1 1.22 7.56l-.43.84a8.08 8.08 0 0 1-6.66 4.13H49v35.02a6.1 6.1 0 0 0 3.03 4.87l.84.43c1.58.79 4 .4 5.24-.85l2.36-2.36a12.04 12.04 0 0 1 7.51-3.11A13 13 0 0 1 81 192h-2a11 11 0 0 0-11-11c-1.94 0-4.75 1.16-6.11 2.53l-2.36 2.36a6.93 6.93 0 0 1-7.56 1.22l-.84-.43a8.08 8.08 0 0 1-4.13-6.66V145H11.98a6.1 6.1 0 0 0-4.87 3.03l-.43.84c-.79 1.58-.4 4 .85 5.24l2.36 2.36a12.04 12.04 0 0 1 3.11 7.51A13 13 0 0 1 0 177v-2a11 11 0 0 0 11-11c0-1.94-1.16-4.75-2.53-6.11l-2.36-2.36a6.93 6.93 0 0 1-1.22-7.56l.43-.84a8.08 8.08 0 0 1 6.66-4.13H47v-35.02a6.1 6.1 0 0 0-3.03-4.87l-.84-.43c-1.59-.8-4-.4-5.24.85l-2.36 2.36A12 12 0 0 1 28 109a13 13 0 1 1 0-26c2.47 0 5.79 1.37 7.53 3.11l2.36 2.36a4.94 4.94 0 0 0 5.24.85l.84-.43A6.1 6.1 0 0 0 47 84.02V49H11.98a8.08 8.08 0 0 1-6.66-4.13l-.43-.84a6.91 6.91 0 0 1 1.22-7.56l2.36-2.36A10.06 10.06 0 0 0 11 28 11 11 0 0 0 0 17v-2a13 13 0 0 1 13 13c0 2.47-1.37 5.79-3.11 7.53l-2.36 2.36a4.94 4.94 0 0 0-.85 5.24l.43.84A6.1 6.1 0 0 0 11.98 47H47V11.98a8.08 8.08 0 0 1 4.13-6.66l.84-.43a6.91 6.91 0 0 1 7.56 1.22l2.36 2.36A10.06 10.06 0 0 0 68 11 11 11 0 0 0 79 0h2a13 13 0 0 1-13 13 12 12 0 0 1-7.53-3.11l-2.36-2.36a4.93 4.93 0 0 0-5.24-.85l-.84.43A6.1 6.1 0 0 0 49 11.98V47h35.02a8.08 8.08 0 0 1 6.66 4.13l.43.84a6.91 6.91 0 0 1-1.22 7.56l-2.36 2.36A10.06 10.06 0 0 0 85 68a11 11 0 0 0 22 0c0-1.94-1.16-4.75-2.53-6.11l-2.36-2.36a6.93 6.93 0 0 1-1.22-7.56l.43-.84a8.08 8.08 0 0 1 6.66-4.13H143V11.98a6.1 6.1 0 0 0-3.03-4.87l-.84-.43c-1.59-.8-4-.4-5.24.85l-2.36 2.36A12 12 0 0 1 124 13a13 13 0 0 1-13-13h2a11 11 0 0 0 11 11c1.94 0 4.75-1.16 6.11-2.53l2.36-2.36a6.93 6.93 0 0 1 7.56-1.22l.84.43a8.08 8.08 0 0 1 4.13 6.66V47h35.02a6.1 6.1 0 0 0 4.87-3.03l.43-.84c.8-1.59.4-4-.85-5.24l-2.36-2.36A12 12 0 0 1 179 28a13 13 0 0 1 13-13zM84.02 143a6.1 6.1 0 0 0 4.87-3.03l.43-.84c.8-1.59.4-4-.85-5.24l-2.36-2.36A12 12 0 0 1 83 124a13 13 0 1 1 26 0c0 2.47-1.37 5.79-3.11 7.53l-2.36 2.36a4.94 4.94 0 0 0-.85 5.24l.43.84a6.1 6.1 0 0 0 4.87 3.03H143v-35.02a8.08 8.08 0 0 1 4.13-6.66l.84-.43a6.91 6.91 0 0 1 7.56 1.22l2.36 2.36A10.06 10.06 0 0 0 164 107a11 11 0 0 0 0-22c-1.94 0-4.75 1.16-6.11 2.53l-2.36 2.36a6.93 6.93 0 0 1-7.56 1.22l-.84-.43a8.08 8.08 0 0 1-4.13-6.66V49h-35.02a6.1 6.1 0 0 0-4.87 3.03l-.43.84c-.79 1.58-.4 4 .85 5.24l2.36 2.36a12.04 12.04 0 0 1 3.11 7.51A13 13 0 1 1 83 68a12 12 0 0 1 3.11-7.53l2.36-2.36a4.93 4.93 0 0 0 .85-5.24l-.43-.84A6.1 6.1 0 0 0 84.02 49H49v35.02a8.08 8.08 0 0 1-4.13 6.66l-.84.43a6.91 6.91 0 0 1-7.56-1.22l-2.36-2.36A10.06 10.06 0 0 0 28 85a11 11 0 0 0 0 22c1.94 0 4.75-1.16 6.11-2.53l2.36-2.36a6.93 6.93 0 0 1 7.56-1.22l.84.43a8.08 8.08 0 0 1 4.13 6.66V143h35.02z'%3E%3C/path%3E%3C/svg%3E");
 }
 .all-modal .modal .modal-dialog {
   width: 100%;
@@ -11564,11 +11974,141 @@ textarea {
   -moz-border-radius: 0;
   border-radius: 0;
   min-height: 100vh;
-  background: url("../img/dotss.png") repeat;
+  background: transparent;
 }
 .all-modal .modal .modal-dialog .modal-content .modal-body {
   direction: rtl;
   padding: 0;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal {
+  overflow: hidden;
+  /*=======================================================================*/
+  /*=======================================================================*/
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .ripple1-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .circle {
+  position: absolute;
+  border-radius: 50%;
+  background: #ffffff2e;
+  animation: ripple 25s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .small {
+  width: 50px;
+  height: 50px;
+  left: -25px;
+  bottom: -25px;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .medium {
+  width: 100px;
+  height: 100px;
+  left: -50px;
+  bottom: -50px;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .large {
+  width: 150px;
+  height: 150px;
+  left: -75px;
+  bottom: -75px;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .xlarge {
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .xxlarge {
+  width: 250px;
+  height: 250px;
+  left: -125px;
+  bottom: -125px;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .shade1 {
+  opacity: 0.2;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .shade2 {
+  opacity: 0.4;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .shade3 {
+  opacity: 0.55;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .shade4 {
+  opacity: 0.65;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .shade5 {
+  opacity: 0.9;
+}
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .navbar-brand {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .navbar-brand img.name-logo {
+  max-width: 80px;
+  width: 100%;
+  height: auto;
+  padding-right: 0;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
+}
+@media screen and (min-width: 992px) {
+  .all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .navbar-brand img.name-logo {
+    max-width: 100px;
+  }
+}
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .navbar-brand img.logo {
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+  padding-right: 0;
+  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
+  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
+  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
+  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
+  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
+}
+@media screen and (min-width: 992px) {
+  .all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .navbar-brand img.logo {
+    max-width: 60px;
+  }
 }
 .all-modal .modal .modal-dialog .modal-content .modal-body .cards {
   margin-top: 50px;
@@ -11671,6 +12211,7 @@ textarea {
 }
 .all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack .box-col .text .caption {
   text-align: right;
+  text-align: justify;
   font-size: 1rem;
   color: #3a3e3d;
   font-weight: 500;
@@ -11876,12 +12417,9 @@ textarea {
   background-color: #e4405f;
 }
 .footer .info .list .item:hover:nth-child(2) {
-  background-color: #3b5999;
-}
-.footer .info .list .item:hover:nth-child(3) {
   background-color: #00AFF0;
 }
-.footer .info .list .item:hover:nth-child(4) {
+.footer .info .list .item:hover:nth-child(3) {
   background-color: #0077B5;
 }
 .footer .info .list .item .link {
@@ -11989,6 +12527,26 @@ textarea {
   position: fixed;
   bottom: 0;
   right: 0;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 1s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 2s;
+  -moz-animation-duration: 1s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 2s;
+  -o-animation-duration: 1s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 2s;
+  animation-duration: 1s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
@@ -12018,33 +12576,40 @@ textarea {
   justify-content: center;
   -ms-flex-pack: center;
   z-index: 1050;
-  -webkit-animation-delay: 20s;
-  -webkit-animation-duration: 0.5s;
+  -webkit-animation-delay: 5s;
+  -webkit-animation-duration: 6s;
   -webkit-animation-name: circle;
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-delay: 20s;
-  -moz-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-delay: 5s;
+  -moz-animation-duration: 6s;
   -moz-animation-name: circle;
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-iteration-count: 1;
-  -o-animation-delay: 20s;
-  -o-animation-duration: 0.5s;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-delay: 5s;
+  -o-animation-duration: 6s;
   -o-animation-name: circle;
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-iteration-count: 1;
-  animation-delay: 20s;
-  animation-duration: 0.5s;
+  -o-animation-iteration-count: infinite;
+  animation-delay: 5s;
+  animation-duration: 6s;
   animation-name: circle;
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
 }
 @-webkit-keyframes circle {
-  to {
+  5% {
+    -moz-transform: rotate(450deg);
+    -ms-transform: rotate(450deg);
+    -o-transform: rotate(450deg);
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+  100% {
     -moz-transform: rotate(450deg);
     -ms-transform: rotate(450deg);
     -o-transform: rotate(450deg);
@@ -12053,7 +12618,14 @@ textarea {
   }
 }
 @-moz-keyframes circle {
-  to {
+  5% {
+    -moz-transform: rotate(450deg);
+    -ms-transform: rotate(450deg);
+    -o-transform: rotate(450deg);
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+  100% {
     -moz-transform: rotate(450deg);
     -ms-transform: rotate(450deg);
     -o-transform: rotate(450deg);
@@ -12062,7 +12634,14 @@ textarea {
   }
 }
 @keyframes circle {
-  to {
+  5% {
+    -moz-transform: rotate(450deg);
+    -ms-transform: rotate(450deg);
+    -o-transform: rotate(450deg);
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+  100% {
     -moz-transform: rotate(450deg);
     -ms-transform: rotate(450deg);
     -o-transform: rotate(450deg);

@@ -27,6 +27,7 @@ $(document).ready(function(){
 
         }  // End if
     });
+    //============================button to top==========================//
     $("#top-btn").click(function(){
        $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
@@ -54,7 +55,6 @@ $(document).ready(function(){
 
         }
     });
-    //=======================typewriter effect===================//
 //=======================animate for about===================//
     var $window = $(window);
     $window.on('scroll', check_if_in_view);
@@ -65,7 +65,7 @@ $(document).ready(function(){
         var window_height = $window.height();
         var window_top_position = $window.scrollTop();
         var window_bottom_position = (window_top_position + window_height);
-         function asd() {
+         function about() {
             var $element = $('.about');
             var element_height = $element.outerHeight();
             var element_top_position = $element.offset().top;
@@ -76,35 +76,40 @@ $(document).ready(function(){
                 (element_top_position <= window_bottom_position)) {
                 $element.addClass('ok');
                 $('.about .image img').addClass('fadeInLeft');
+                $('.about .caption').addClass('fadeInRight');
             } /*else {
                 $element.removeClass('fadeInLeft');
             }*/
         };
-        function asd2() {
+        function cards() {
             var $element = $('.pack');
             var element_height = $element.outerHeight();
             var element_top_position = $element.offset().top;
             var element_bottom_position = (element_top_position + element_height);
-
             //check to see if this current container is within viewport
-            if (/*(!($(this).hasClass('ok'))) &&*/
+            if ((!($(this).hasClass('ok'))) &&
                 (element_top_position <= window_bottom_position)) {
                 $element.addClass('ok');
+
                 $('.pack .fade-up').addClass('fadeInUp');
                 $('.pack .fade-right').addClass('fadeInRight');
+
             } /*else {
                 $element.removeClass('fadeInLeft');
             }*/
         };
-         asd();
-         asd2();
+         about();
+         cards();
     };
 
-    //=======================tooltip===================//
-    $('[data-toggle="tooltip"]').tooltip();
 
-    //=======================tooltip===================//
-
-
+//=======================animate for package===================//
+    $(".pack.not-modal .box-col").hover(function () {
+        $(this).addClass("style-pack");
+    },function () {
+        $(this).removeClass("style-pack");
+    });
+//=======================tooltip===================//
+    /*    $('[data-toggle="tooltip"]').tooltip();*/
 
 });

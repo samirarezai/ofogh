@@ -31,11 +31,11 @@
     font-family: Shabnam,IRANSans;
     padding: 0;
     margin: 0;
-    @include font-source-sans(3rem, #fff, 600, 1rem);
+    @include font-source-sans(3rem, #fff, 600, 3.1rem);
+
 @include animation(1s,1s);
     @include media-max($M){
-
-      @include font-source-sans(2rem, #fff, 500, 3rem);
+      @include font-source-sans(2.2rem, #fff, 500, 3rem);
     }
   }
 

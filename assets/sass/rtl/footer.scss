@@ -5,15 +5,14 @@
   color: #fff;
   width: 100%;
   background-color: $color-dark;
-
   text-align: right;
   padding: 40px 0;
   @include flex(column, nowrap, center, flex-start);
+
   .info {
     margin: 30px 0;
 
     .subject {
-
       .fa {
         padding-left: 8px;
         @include font-source-sans(1rem, $color-yellow, 500, 1.1rem);
@@ -36,17 +35,12 @@
         }
 
         &:hover:nth-child(2) {
-          background-color: #3b5999;
-        }
-
-        &:hover:nth-child(3) {
           background-color: #00AFF0;
         }
 
-        &:hover:nth-child(4) {
+        &:hover:nth-child(3) {
           background-color: #0077B5;
         }
-
         @include radius(50%);
 
         .link {
@@ -83,21 +77,32 @@
   position: fixed;
   bottom: 0;
   right: 0;
+  @include animation(2s, 1s);
+
   @include transform(90deg);
   @include flex(row, nowrap, center, center);
   z-index: 1050;
-  @include animations(20s, .5s, circle, 1);
+  @include animations(5s, 6s, circle, infinite);
   @include keyframes(circle) {
-    from {
+    0% {
     }
-    to {
+    5% {
       @include transform(450deg);
+    }
+    100% {
+      @include transform(450deg);
+
     }
   }
 
   img {
     max-width: 40px;
+
   }
+
+}
+
+.style-btn-to-top {
 
 }
 

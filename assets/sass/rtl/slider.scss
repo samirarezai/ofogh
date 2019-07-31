@@ -60,13 +60,24 @@
 
         .carousel-item {
           color: #444;
+@include radius(10px);
 
           .row {
             .box-col {
-              margin-top: 25px;
-              @include flex(column, nowrap, center, center);
+              margin:25px;
+              padding:5px 5px 5px 55px;
+              @include flex(column,wrap, center,center);
               height: 100%;
+              width: 90%;
+@include media-min($M){
+  margin: 40px 25px 25px;
+  padding: 0 0 10px 50px;
 
+
+
+}
+
+              @include radius(10px);
               .question {
                 font-family: Shabnam;
                 margin-bottom: 10px;
@@ -84,14 +95,13 @@
 
       .carousel-control-prev {
         left: -150px;
-        bottom: 50%;
+        bottom: 0%;
         @include media-min($S) {
           left: -57px;
         }
         @include media-min($M) {
-          left: -100px;
+          left: -85px;
         }
-
         .carousel-control-prev-icon {
           background-image: url("../img/left.svg");
 
@@ -99,22 +109,15 @@
           height: 30px;
         }
       }
-
       .carousel-control-next {
-        bottom: 50%;
+        bottom: 0%;
         right: -150px;
-
-
         @include media-min($S) {
           right: -57px;
         }
         @include media-min($M) {
-
-          right: -100px;
-
-
+          right: -85px;
         }
-
 
         .carousel-control-next-icon {
           background-image: url("../img/left.svg");

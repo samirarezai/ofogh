@@ -166,47 +166,92 @@ textarea {
 
 }
 @mixin keyframe{
- -webkit-animation-name: l;
-   -moz-animation-name:l;
-  -o-animation-name: l;
-  animation-name: l;
-  @-webkit-keyframes l {
+ -webkit-animation-name: op;
+   -moz-animation-name:op;
+  -o-animation-name: op;
+  animation-name: op;
+  @-webkit-keyframes op {
     0% {
       opacity: 0;
     }
 
     100% {
       opacity: 1;
+    }
+  }
+
+  @-moz-keyframes op{
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes op {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes op {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+@mixin keyframe-rotate{
+  -webkit-animation-name: l;
+  -moz-animation-name:l;
+  -o-animation-name: l;
+  animation-name: l;
+  @-webkit-keyframes l {
+    0% {
+      @include transform(0deg);
+    }
+
+    100% {
+      @include transform(360deg);
     }
   }
 
   @-moz-keyframes l{
     0% {
-      opacity: 0;
+      @include transform(0deg);
     }
 
     100% {
-      opacity: 1;
+      @include transform(360deg);
     }
   }
 
   @-o-keyframes l {
     0% {
-      opacity: 0;
+      @include transform(0deg);
     }
 
     100% {
-      opacity: 1;
+      @include transform(360deg);
     }
   }
 
   @keyframes l {
     0% {
-      opacity: 0;
+      @include transform(0deg);
     }
 
     100% {
-      opacity: 1;
+      @include transform(360deg);
     }
   }
 }

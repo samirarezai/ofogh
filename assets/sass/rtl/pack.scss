@@ -39,15 +39,15 @@ min-height: 350px;
         }
         .image{
           width: 70px;
-
           height: 70px;
           background-color: $color-yellow;
-
           margin: 10px auto;
-
           @include radius(50%);
           padding: 10px;
+          @include flex(row,nowrap,center,center);
+          @include transition;
           img{
+
             max-width: 40px;
 
             width: 100%;
@@ -66,16 +66,27 @@ min-height: 350px;
         }
         .caption{
           @include font-source-sans(.9rem,#3a3e3d,400,1.7);
+text-align: justify;
+
 
         }
-
         .btn-card{
           background-color: transparent;
           color: $color-violet;
-          padding: 5px 20px;
+          padding: 3px 20px;
           @include transition;
           @include radius(20px);
           border:1px solid $color-violet;
+          transition: opacity .1s;
+
+          &:after{
+            content: '\f104';
+            font-family: FontAwesome;
+            -webkit-transition: all ease-in-out 0.2s;
+            transition: all ease-in-out 0.2s;
+            margin-right: 0;
+            opacity: 0;
+          }
           &:focus{
               outline: 0px dotted;
               outline: 0px auto -webkit-focus-ring-color;
@@ -84,9 +95,31 @@ min-height: 350px;
             background-color: $color-violet;
             color: #fff;
           }
+          &:hover:after{
+            margin-right:10px;
+           opacity: 1;
+          }
 
         }
       }
     }
+    .box-col.style-pack{
+      .text{
+        .image{
+          @include animation(0s,.5s);
+
+        @include keyframe-rotate;
+        }
+      }
+    }
   }
+}
+.pack.not-modal{
+.text{
+  .caption{
+    height: 80px;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+}
 }

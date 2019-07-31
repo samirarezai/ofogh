@@ -64,8 +64,8 @@
       background: #ffffff2e;
       animation: ripple 25s infinite;
       box-shadow: 0px 0px 1px 0px #508fb9;
-    }
 
+    }
     .small{
       width:50px;
       height: 50px;
@@ -267,7 +267,7 @@
             @include media-max($L) {
               font-size: .9rem;
               font-weight: 500;
-              border-bottom: 1px solid $color-violet-rgba;
+              border-bottom: 1px solid #fcaf1714;
               &:last-child {
                 border-bottom: 0px solid $color-violet;
               }
@@ -276,6 +276,10 @@
             .nav-link {
               color: #000;
               @include transition;
+              @include media-max($L){
+                color: #fff;
+
+              }
             }
 
             .active {
