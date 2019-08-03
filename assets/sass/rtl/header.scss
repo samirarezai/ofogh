@@ -8,11 +8,9 @@
   background-repeat: no-repeat;
   background-image: url("../img/header.jpg");
   background-size: cover;
-
   position: relative;
   z-index: 1060;
   @include flex(row, nowrap, center, center);
-
   &:after {
     content: "";
     display: block;
@@ -21,7 +19,6 @@
     background-size: cover;
     height: 45px;
     width: 100%;
-
     bottom: -2px;
     right: 0;
     z-index: 1065;
@@ -233,31 +230,20 @@
         }
         .navbar-brand {
           @include flex(row, nowrap, center, space-between);
-          img.name-logo {
-            max-width: 80px;
-            width: 100%;
-            height: auto;
-            padding-right: 0;
-            @include transition;
-            @include media-min($L) {
-              max-width: 100px;
-            }
-          }
+          padding: 3px 0;
           img.logo {
-            max-width: 50px;
+            max-width: 150px;
             width: 100%;
             height: auto;
             padding-right: 0;
             @include transition;
             @include media-min($L) {
-              max-width: 60px;
+              max-width: 170px;
             }
-          }
 
-          /* }*/
+          }
         }
       }
-
       .navbar-collapse {
         width: 100%;
         padding: 2px 15px;
@@ -306,15 +292,11 @@
 
         .navigate {
           .navbar-brand {
-            img.name-logo{
-              max-width: 80px;
-            }
             img.logo {
               @include transition;
-              max-width: 50px;
+              max-width: 150px;
             }
           }
-
         }
       }
     }

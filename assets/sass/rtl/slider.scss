@@ -16,8 +16,7 @@
         font-family: Shabnam;
 
         margin: 50px 0 15px;
-        @include font-source-sans($big-font, #631f5b, 600, 2.1);
-
+        @include font-source-sans($big-font, #631f5b, 600, 2.3);
         position: relative;
 
         &:after {
@@ -40,8 +39,7 @@
 
       .carousel-indicators {
         left: 40px;
-        bottom: 0px;
-
+        bottom: -10px;
         li {
           background-color: #c1c1c1;
           border-radius: 50%;
@@ -72,30 +70,29 @@
 @include media-min($M){
   margin: 40px 25px 25px;
   padding: 0 0 10px 50px;
-
-
-
 }
-
               @include radius(10px);
               .question {
                 font-family: Shabnam;
                 margin-bottom: 10px;
                 @include font-source-sans(1.1rem, #631f5b, 600, 1.5rem);
+                @include animation(4s,.75s);
               }
-
               .answer {
-                @include font-source-sans(1rem, #3a3e3d, 400, 1.7rem);
+                @include font-source-sans(1.1rem, #3a3e3d, 500, 1.7rem);
+                @include animation(.75s,1s);
+              }
+              .answer.so{
+                @include animation(3s,.5s);
               }
             }
           }
-
         }
       }
 
       .carousel-control-prev {
         left: -150px;
-        bottom: 0%;
+        bottom: 13%;
         @include media-min($S) {
           left: -57px;
         }
@@ -110,7 +107,7 @@
         }
       }
       .carousel-control-next {
-        bottom: 0%;
+        bottom: 13%;
         right: -150px;
         @include media-min($S) {
           right: -57px;

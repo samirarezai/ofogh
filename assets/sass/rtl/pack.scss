@@ -114,12 +114,13 @@ text-align: justify;
     }
   }
 }
+
 .pack.not-modal{
 .text{
   .caption{
     height: 80px;
     overflow: hidden;
-    text-overflow: clip;
+    text-overflow: ellipsis;
   }
 }
 }

@@ -15,8 +15,6 @@ background-color: #fff;
   min-width: 100%;
   margin: 0;
   min-height: 100vh;
-
-
   .modal-content{
     border: 0;
     @include radius(0);
@@ -109,27 +107,18 @@ overflow: hidden;
         /*=======================================================================*/
         .navbar-brand {
           @include flex(row, nowrap, center, space-between);
-          img.name-logo {
-            max-width: 80px;
-            width: 100%;
-            height: auto;
-            padding-right: 0;
-            @include transition;
-            @include media-min($L) {
-              max-width: 100px;
-            }
-          }
-          img.logo {
-            max-width: 50px;
-            width: 100%;
-            height: auto;
-            padding-right: 0;
-            @include transition;
-            @include media-min($L) {
-              max-width: 60px;
-            }
-          }
+          padding: 0;
 
+          img{
+            max-width: 150px;
+            width: 100%;
+            height: auto;
+            padding-right: 0;
+            @include transition;
+            @include media-min($L) {
+              max-width: 150px;
+            }
+          }
         }
       }
       .cards{

@@ -10003,26 +10003,10 @@ textarea {
   -ms-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: space-between;
-  /* }*/
-}
-.header .navigation .navbar .navigate .navbar-brand img.name-logo {
-  max-width: 80px;
-  width: 100%;
-  height: auto;
-  padding-right: 0;
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
-  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
-}
-@media screen and (min-width: 992px) {
-  .header .navigation .navbar .navigate .navbar-brand img.name-logo {
-    max-width: 100px;
-  }
+  padding: 3px 0;
 }
 .header .navigation .navbar .navigate .navbar-brand img.logo {
-  max-width: 50px;
+  max-width: 150px;
   width: 100%;
   height: auto;
   padding-right: 0;
@@ -10034,7 +10018,7 @@ textarea {
 }
 @media screen and (min-width: 992px) {
   .header .navigation .navbar .navigate .navbar-brand img.logo {
-    max-width: 60px;
+    max-width: 170px;
   }
 }
 .header .navigation .navbar .navbar-collapse {
@@ -10090,16 +10074,13 @@ textarea {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .header .navigation.style-navigation .navbar .navigate .navbar-brand img.name-logo {
-    max-width: 80px;
-  }
   .header .navigation.style-navigation .navbar .navigate .navbar-brand img.logo {
     -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
     -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
     -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
     -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
     transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
-    max-width: 50px;
+    max-width: 150px;
   }
 }
 .header .navigation.style-navigation .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -11189,7 +11170,7 @@ textarea {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: rgba(103, 27, 94, 0.67);
+  background: rgba(65, 0, 58, 0.75);
   top: 0;
   right: 0;
   z-index: -1;
@@ -11532,7 +11513,7 @@ textarea {
 .pack.not-modal .text .caption {
   height: 80px;
   overflow: hidden;
-  text-overflow: clip;
+  text-overflow: ellipsis;
 }
 
 /*
@@ -11557,7 +11538,7 @@ textarea {
   font-size: 2rem;
   color: #631f5b;
   font-weight: 600;
-  line-height: 2.1;
+  line-height: 2.3;
   position: relative;
 }
 .slider .container .head .title:after {
@@ -11576,7 +11557,7 @@ textarea {
 }
 .slider .container .carousel .carousel-indicators {
   left: 40px;
-  bottom: 0px;
+  bottom: -10px;
 }
 .slider .container .carousel .carousel-indicators li {
   background-color: #c1c1c1;
@@ -11649,16 +11630,78 @@ textarea {
   color: #631f5b;
   font-weight: 600;
   line-height: 1.5rem;
+  -webkit-animation-delay: 4s;
+  -webkit-animation-duration: 0.75s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 4s;
+  -moz-animation-duration: 0.75s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 4s;
+  -o-animation-duration: 0.75s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 4s;
+  animation-duration: 0.75s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
 }
 .slider .container .carousel .carousel-inner .carousel-item .row .box-col .answer {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #3a3e3d;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.7rem;
+  -webkit-animation-delay: 0.75s;
+  -webkit-animation-duration: 1s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0.75s;
+  -moz-animation-duration: 1s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0.75s;
+  -o-animation-duration: 1s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0.75s;
+  animation-duration: 1s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+}
+.slider .container .carousel .carousel-inner .carousel-item .row .box-col .answer.so {
+  -webkit-animation-delay: 3s;
+  -webkit-animation-duration: 0.5s;
+  /*-webkit-animation-name: $animation;*/
+  -webkit-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 3s;
+  -moz-animation-duration: 0.5s;
+  /*  -moz-animation-name: $animation;*/
+  -moz-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 3s;
+  -o-animation-duration: 0.5s;
+  /* -o-animation-name: $animation;*/
+  -o-animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
+  animation-delay: 3s;
+  animation-duration: 0.5s;
+  /*  animation-name: $animation;*/
+  animation-fill-mode: both;
+  /* this prevents the animation from restarting! */
 }
 .slider .container .carousel .carousel-control-prev {
   left: -150px;
-  bottom: 0%;
+  bottom: 13%;
 }
 @media screen and (min-width: 576px) {
   .slider .container .carousel .carousel-control-prev {
@@ -11676,7 +11719,7 @@ textarea {
   height: 30px;
 }
 .slider .container .carousel .carousel-control-next {
-  bottom: 0%;
+  bottom: 13%;
   right: -150px;
 }
 @media screen and (min-width: 576px) {
@@ -11711,7 +11754,7 @@ textarea {
 .connection {
   width: 100%;
   z-index: 12;
-  background: url("../img/connect.jpg") no-repeat center center;
+  background: url("../img/Digital.png") no-repeat center center;
   background-size: cover;
   padding: 100px 0 50px;
   position: relative;
@@ -11935,8 +11978,8 @@ textarea {
   height: 100%;
   position: absolute;
   background: transparent;
-  background: -webkit-linear-gradient(left, transparent, #42003b);
-  background: linear-gradient(to right, transparent, #42003b);
+  background: -webkit-linear-gradient(left, transparent, #922385);
+  background: linear-gradient(to right, transparent, #922385);
   top: 0;
   right: 0;
   z-index: -1;
@@ -12077,9 +12120,10 @@ textarea {
   -ms-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: space-between;
+  padding: 0;
 }
-.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .navbar-brand img.name-logo {
-  max-width: 80px;
+.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .navbar-brand img {
+  max-width: 150px;
   width: 100%;
   height: auto;
   padding-right: 0;
@@ -12090,24 +12134,8 @@ textarea {
   transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
 }
 @media screen and (min-width: 992px) {
-  .all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .navbar-brand img.name-logo {
-    max-width: 100px;
-  }
-}
-.all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .navbar-brand img.logo {
-  max-width: 50px;
-  width: 100%;
-  height: auto;
-  padding-right: 0;
-  -webkit-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
-  -moz-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
-  -ms-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
-  -o-transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
-  transition: all 0.3s, width 0.3s, opacity 0.4s, border 0.1s, margin 0s, background 0.3s, width 0.5s, height 0.5s;
-}
-@media screen and (min-width: 992px) {
-  .all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .navbar-brand img.logo {
-    max-width: 60px;
+  .all-modal .modal .modal-dialog .modal-content .modal-body .navigation-modal .navbar-brand img {
+    max-width: 150px;
   }
 }
 .all-modal .modal .modal-dialog .modal-content .modal-body .cards {
