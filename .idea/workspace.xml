@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77d9829e-7316-4ed3-b4da-3d6c928f4ed8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/ch.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/curve-invers.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/curve2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/curve7.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dots-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/dotss.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/fo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/name-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/name-logo.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/sms1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/javascript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/rtl/cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/rtl/cards.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/rtl/connection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/rtl/connection.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/rtl/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/rtl/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/rtl/modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/rtl/modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/rtl/pack.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/rtl/pack.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/rtl/slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/rtl/slider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="77d9829e-7316-4ed3-b4da-3d6c928f4ed8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -289,12 +267,12 @@
       <workItem from="1564374884917" duration="28810000" />
       <workItem from="1564462352749" duration="28843000" />
       <workItem from="1564547853569" duration="28177000" />
-      <workItem from="1564806837898" duration="13570000" />
+      <workItem from="1564806837898" duration="14169000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209988000" />
+    <option name="totallyTimeSpent" value="210587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
