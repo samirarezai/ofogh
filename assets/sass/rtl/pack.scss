@@ -122,5 +122,9 @@ text-align: justify;
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
 }
+  .fade-up,.fade-right{
+    opacity: 0;
+  }
 }

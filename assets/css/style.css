@@ -9685,7 +9685,7 @@ textarea {
   width: 100%;
   height: 100vh;
   background-attachment: fixed;
-  background-position: 50% 0;
+  background-position: 0 0;
   background-repeat: no-repeat;
   background-image: url("../img/header.jpg");
   background-size: cover;
@@ -9742,6 +9742,8 @@ textarea {
   height: 100%;
   background: rgba(103, 27, 94, 0.58);
   position: absolute;
+  top: 0;
+  right: 0;
 }
 .header .navigation {
   text-align: right;
@@ -10399,6 +10401,12 @@ textarea {
   justify-content: center;
   -ms-flex-pack: center;
 }
+@media screen and (max-width: 576px) {
+  .inner {
+    top: 35%;
+    right: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .inner {
     padding: 20px;
@@ -10426,23 +10434,23 @@ textarea {
   color: #fff;
   font-weight: 600;
   line-height: 3.1rem;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2.5s;
+  -webkit-animation-duration: 2s;
   /*-webkit-animation-name: $animation;*/
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-delay: 1s;
-  -moz-animation-duration: 1s;
+  -moz-animation-delay: 2.5s;
+  -moz-animation-duration: 2s;
   /*  -moz-animation-name: $animation;*/
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-delay: 1s;
-  -o-animation-duration: 1s;
+  -o-animation-delay: 2.5s;
+  -o-animation-duration: 2s;
   /* -o-animation-name: $animation;*/
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-delay: 1s;
-  animation-duration: 1s;
+  animation-delay: 2.5s;
+  animation-duration: 2s;
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
@@ -10456,23 +10464,23 @@ textarea {
   }
 }
 .inner .box-text .cd-intro {
-  -webkit-animation-delay: 1.85s;
-  -webkit-animation-duration: 0.9s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-duration: 2.5s;
   /*-webkit-animation-name: $animation;*/
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-delay: 1.85s;
-  -moz-animation-duration: 0.9s;
+  -moz-animation-delay: 3s;
+  -moz-animation-duration: 2.5s;
   /*  -moz-animation-name: $animation;*/
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-delay: 1.85s;
-  -o-animation-duration: 0.9s;
+  -o-animation-delay: 3s;
+  -o-animation-duration: 2.5s;
   /* -o-animation-name: $animation;*/
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-delay: 1.85s;
-  animation-duration: 0.9s;
+  animation-delay: 3s;
+  animation-duration: 2.5s;
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
@@ -10483,23 +10491,23 @@ textarea {
   color: #ffffffd9;
   font-weight: 400;
   line-height: 1.5rem;
-  -webkit-animation-delay: 3s;
-  -webkit-animation-duration: 0.75s;
+  -webkit-animation-delay: 4.25s;
+  -webkit-animation-duration: 2.5s;
   /*-webkit-animation-name: $animation;*/
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-delay: 3s;
-  -moz-animation-duration: 0.75s;
+  -moz-animation-delay: 4.25s;
+  -moz-animation-duration: 2.5s;
   /*  -moz-animation-name: $animation;*/
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-delay: 3s;
-  -o-animation-duration: 0.75s;
+  -o-animation-delay: 4.25s;
+  -o-animation-duration: 2.5s;
   /* -o-animation-name: $animation;*/
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-delay: 3s;
-  animation-duration: 0.75s;
+  animation-delay: 4.25s;
+  animation-duration: 2.5s;
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
@@ -10523,23 +10531,23 @@ textarea {
   bottom: -40px;
   right: calc(50% - 75px);
   opacity: 0;
-  -webkit-animation-delay: 3.8s;
-  -webkit-animation-duration: 0.5s;
+  -webkit-animation-delay: 5.75s;
+  -webkit-animation-duration: 2.5s;
   /*-webkit-animation-name: $animation;*/
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-delay: 3.8s;
-  -moz-animation-duration: 0.5s;
+  -moz-animation-delay: 5.75s;
+  -moz-animation-duration: 2.5s;
   /*  -moz-animation-name: $animation;*/
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-delay: 3.8s;
-  -o-animation-duration: 0.5s;
+  -o-animation-delay: 5.75s;
+  -o-animation-duration: 2.5s;
   /* -o-animation-name: $animation;*/
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-delay: 3.8s;
-  animation-duration: 0.5s;
+  animation-delay: 5.75s;
+  animation-duration: 2.5s;
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
@@ -10591,7 +10599,7 @@ textarea {
 */
 .about {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 70px;
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
@@ -10669,22 +10677,23 @@ textarea {
   font-weight: 400;
   line-height: 2.1rem;
   text-align: justify;
-  -webkit-animation-delay: 3s;
+  opacity: 0;
+  -webkit-animation-delay: 1.25s;
   -webkit-animation-duration: 1.25s;
   /*-webkit-animation-name: $animation;*/
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-delay: 3s;
+  -moz-animation-delay: 1.25s;
   -moz-animation-duration: 1.25s;
   /*  -moz-animation-name: $animation;*/
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-delay: 3s;
+  -o-animation-delay: 1.25s;
   -o-animation-duration: 1.25s;
   /* -o-animation-name: $animation;*/
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-delay: 3s;
+  animation-delay: 1.25s;
   animation-duration: 1.25s;
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
@@ -10718,26 +10727,6 @@ textarea {
   position: relative;
   width: 100%;
   height: 400px;
-  -webkit-animation-delay: 1.25s;
-  -webkit-animation-duration: 0.75s;
-  /*-webkit-animation-name: $animation;*/
-  -webkit-animation-fill-mode: both;
-  /* this prevents the animation from restarting! */
-  -moz-animation-delay: 1.25s;
-  -moz-animation-duration: 0.75s;
-  /*  -moz-animation-name: $animation;*/
-  -moz-animation-fill-mode: both;
-  /* this prevents the animation from restarting! */
-  -o-animation-delay: 1.25s;
-  -o-animation-duration: 0.75s;
-  /* -o-animation-name: $animation;*/
-  -o-animation-fill-mode: both;
-  /* this prevents the animation from restarting! */
-  animation-delay: 1.25s;
-  animation-duration: 0.75s;
-  /*  animation-name: $animation;*/
-  animation-fill-mode: both;
-  /* this prevents the animation from restarting! */
 }
 .about .row .image img {
   position: absolute;
@@ -10756,22 +10745,22 @@ textarea {
 .about .row .image img:nth-child(1) {
   top: 23%;
   left: 58%;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: 3s;
   -webkit-animation-duration: 0.75s;
   /*-webkit-animation-name: $animation;*/
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-delay: 1s;
+  -moz-animation-delay: 3s;
   -moz-animation-duration: 0.75s;
   /*  -moz-animation-name: $animation;*/
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-delay: 1s;
+  -o-animation-delay: 3s;
   -o-animation-duration: 0.75s;
   /* -o-animation-name: $animation;*/
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-delay: 1s;
+  animation-delay: 3s;
   animation-duration: 0.75s;
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
@@ -10804,22 +10793,22 @@ textarea {
 .about .row .image img:nth-child(2) {
   top: 46%;
   left: 44%;
-  -webkit-animation-delay: 1 s;
+  -webkit-animation-delay: 3.25s;
   -webkit-animation-duration: 1s;
   /*-webkit-animation-name: $animation;*/
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-delay: 1 s;
+  -moz-animation-delay: 3.25s;
   -moz-animation-duration: 1s;
   /*  -moz-animation-name: $animation;*/
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-delay: 1 s;
+  -o-animation-delay: 3.25s;
   -o-animation-duration: 1s;
   /* -o-animation-name: $animation;*/
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-delay: 1 s;
+  animation-delay: 3.25s;
   animation-duration: 1s;
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
@@ -10852,22 +10841,22 @@ textarea {
 .about .row .image img:nth-child(3) {
   top: 16%;
   left: 4%;
-  -webkit-animation-delay: 1.5s;
+  -webkit-animation-delay: 3.25s;
   -webkit-animation-duration: 0.5s;
   /*-webkit-animation-name: $animation;*/
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-delay: 1.5s;
+  -moz-animation-delay: 3.25s;
   -moz-animation-duration: 0.5s;
   /*  -moz-animation-name: $animation;*/
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-delay: 1.5s;
+  -o-animation-delay: 3.25s;
   -o-animation-duration: 0.5s;
   /* -o-animation-name: $animation;*/
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-delay: 1.5s;
+  animation-delay: 3.25s;
   animation-duration: 0.5s;
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
@@ -10900,22 +10889,22 @@ textarea {
 .about .row .image img:nth-child(4) {
   top: 0%;
   left: 35%;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-delay: 3.75s;
   -webkit-animation-duration: 0.75s;
   /*-webkit-animation-name: $animation;*/
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-delay: 2s;
+  -moz-animation-delay: 3.75s;
   -moz-animation-duration: 0.75s;
   /*  -moz-animation-name: $animation;*/
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-delay: 2s;
+  -o-animation-delay: 3.75s;
   -o-animation-duration: 0.75s;
   /* -o-animation-name: $animation;*/
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-delay: 2s;
+  animation-delay: 3.75s;
   animation-duration: 0.75s;
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
@@ -10948,22 +10937,22 @@ textarea {
 .about .row .image img:nth-child(5) {
   top: 37%;
   left: 10%;
-  -webkit-animation-delay: 2.25s;
+  -webkit-animation-delay: 4s;
   -webkit-animation-duration: 1s;
   /*-webkit-animation-name: $animation;*/
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-delay: 2.25s;
+  -moz-animation-delay: 4s;
   -moz-animation-duration: 1s;
   /*  -moz-animation-name: $animation;*/
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-delay: 2.25s;
+  -o-animation-delay: 4s;
   -o-animation-duration: 1s;
   /* -o-animation-name: $animation;*/
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-delay: 2.25s;
+  animation-delay: 4s;
   animation-duration: 1s;
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
@@ -11514,6 +11503,9 @@ textarea {
   height: 80px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.pack.not-modal .fade-up, .pack.not-modal .fade-right {
+  opacity: 0;
 }
 
 /*
@@ -12200,7 +12192,7 @@ textarea {
   font-size: 2rem;
   color: #fcaf17;
   font-weight: 600;
-  line-height: 1rem;
+  line-height: -1rem;
 }
 .all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack .box-col .text .icon-close:focus {
   outline: 0;
