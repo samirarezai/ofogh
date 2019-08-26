@@ -21,7 +21,6 @@
     height: 25px;
     width: 110%;
     top: -3px;
-
     z-index: 1050;
     right: -5%;
 
@@ -60,21 +59,22 @@
         }
       }
       }
+
       .form-group-inline{
         @include media-min($M){
-
           @include flex(row,nowrap,center,space-between);
-
         }
-
         .form-group{
           @include transition;
+          min-width: 250px;
           @include media-min($M){
-
-            flex-basis: 500px;
+            flex-basis: 700px;
+            min-width: 200px;
+          }
+          @include media-min($L){
+            min-width: 250px;
           }
           .form-control{
-
             background-color: transparent;
             @include transition;
             border: 1px solid transparent;
@@ -97,8 +97,6 @@
               border: 1px solid #fff;
             }
           }
-
-
         }
       }
       .form-group{
@@ -110,7 +108,7 @@
           border-radius: 0;
           color: #fff;
           @include placeholder;
-
+@include font-source-sans(.9rem,#fff,400,1.5rem);
           &:focus{
             @include transition;
             @include transition;
@@ -128,6 +126,7 @@
         }
       }
       .btn{
+
         text-align: center;
         background-color:$color-yellow;
 
@@ -138,9 +137,12 @@
         display:flex;
         border-radius: 20px;
         margin: 10px auto;
-
+        &:focus{
+          outline: 0;
+          box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+          border-bottom: 0px solid #fff;
+        }
       }
-
     }
   }
   .filter{

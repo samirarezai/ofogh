@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="77d9829e-7316-4ed3-b4da-3d6c928f4ed8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/font.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/javascript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/rtl/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/rtl/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/rtl/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/rtl/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/rtl/inner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/rtl/inner.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/rtl/modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/rtl/modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/rtl/pack.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/rtl/pack.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/rtl/connection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/rtl/connection.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,39 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/sass/rtl/connection.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3576">
-              <caret line="149" column="56" selection-start-line="149" selection-start-column="56" selection-end-line="149" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/sass/rtl/pack.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2880">
-              <caret line="124" selection-start-line="124" selection-end-line="124" />
-              <folding>
-                <element signature="e#704#775#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/sass/rtl/cards.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1440">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
-              <folding>
-                <element signature="e#700#4490#2" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/sass/rtl/about.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,29 +70,70 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="27" column="78" selection-start-line="27" selection-start-column="78" selection-end-line="27" selection-end-column="78" />
+            <state relative-caret-position="-780">
+              <caret line="133" column="82" selection-start-line="133" selection-start-column="82" selection-end-line="133" selection-end-column="82" />
               <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#0;n#section#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#section#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/sass/rtl/connection.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3432">
+              <caret line="143" column="9" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sendemail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/sass/rtl/footer.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -163,7 +169,6 @@
         <option value="$PROJECT_DIR$/assets/sass/_mixins.scss" />
         <option value="$PROJECT_DIR$/assets/sass/rtl/footer.scss" />
         <option value="$PROJECT_DIR$/assets/sass/rtl/cards.scss" />
-        <option value="$PROJECT_DIR$/assets/sass/rtl/connection.scss" />
         <option value="$PROJECT_DIR$/assets/sass/rtl/slider.scss" />
         <option value="$PROJECT_DIR$/assets/sass/rtl/header.scss" />
         <option value="$PROJECT_DIR$/assets/sass/rtl/inner.scss" />
@@ -171,6 +176,8 @@
         <option value="$PROJECT_DIR$/assets/js/javascript.js" />
         <option value="$PROJECT_DIR$/assets/sass/rtl/modal.scss" />
         <option value="$PROJECT_DIR$/assets/sass/rtl/about.scss" />
+        <option value="$PROJECT_DIR$/sendemail.php" />
+        <option value="$PROJECT_DIR$/assets/sass/rtl/connection.scss" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -232,7 +239,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../angular/project-post/project1" />
+    <property name="last_opened_file_path" value="$USER_HOME$/laragon/www/ofogh" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
@@ -276,18 +283,21 @@
       <workItem from="1566016708694" duration="806000" />
       <workItem from="1566043002905" duration="6389000" />
       <workItem from="1566103288401" duration="12000000" />
-      <workItem from="1566626940395" duration="103000" />
+      <workItem from="1566626940395" duration="6855000" />
+      <workItem from="1566709122869" duration="1369000" />
+      <workItem from="1566723600523" duration="6347000" />
+      <workItem from="1566796495583" duration="4547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235054000" />
+    <option name="totallyTimeSpent" value="254069000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1369863" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09799789" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -361,9 +371,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/app.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/app.css" />
     <entry file="file://$PROJECT_DIR$/assets/font-persian/iransans/css/fontiran.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -428,13 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/sass/rtl/footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-588">
-          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/sass/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4800">
@@ -446,13 +447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2184">
           <caret line="91" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/sass/rtl/connection.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3576">
-          <caret line="149" column="56" selection-start-line="149" selection-start-column="56" selection-end-line="149" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -511,6 +505,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/rtl/connection.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3432">
+          <caret line="143" column="9" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sendemail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sass/rtl/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/javascript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
@@ -520,28 +535,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="27" column="78" selection-start-line="27" selection-start-column="78" selection-end-line="27" selection-end-column="78" />
+        <state relative-caret-position="-780">
+          <caret line="133" column="82" selection-start-line="133" selection-start-column="82" selection-end-line="133" selection-end-column="82" />
           <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#0;n#section#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#1;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#section#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
