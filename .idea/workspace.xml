@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="77d9829e-7316-4ed3-b4da-3d6c928f4ed8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/font.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/font.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/rtl/connection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/rtl/connection.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sendemail.php" beforeDir="false" afterPath="$PROJECT_DIR$/sendemail.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -70,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-780">
-              <caret line="133" column="82" selection-start-line="133" selection-start-column="82" selection-end-line="133" selection-end-column="82" />
+            <state relative-caret-position="-3538">
+              <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#0;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -100,7 +97,6 @@
                 <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#1;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
@@ -114,8 +110,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/sass/rtl/connection.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3432">
-              <caret line="143" column="9" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="9" />
+            <state relative-caret-position="2592">
+              <caret line="131" column="7" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
+              <folding>
+                <element signature="e#2450#3179#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sendemail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="264">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -176,9 +175,9 @@
         <option value="$PROJECT_DIR$/assets/js/javascript.js" />
         <option value="$PROJECT_DIR$/assets/sass/rtl/modal.scss" />
         <option value="$PROJECT_DIR$/assets/sass/rtl/about.scss" />
-        <option value="$PROJECT_DIR$/sendemail.php" />
-        <option value="$PROJECT_DIR$/assets/sass/rtl/connection.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/sass/rtl/connection.scss" />
+        <option value="$PROJECT_DIR$/sendemail.php" />
       </list>
     </option>
   </component>
@@ -239,7 +238,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/laragon/www/ofogh" />
+    <property name="last_opened_file_path" value="$USER_HOME$/laragon/www/berooz24" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
@@ -286,18 +285,24 @@
       <workItem from="1566626940395" duration="6855000" />
       <workItem from="1566709122869" duration="1369000" />
       <workItem from="1566723600523" duration="6347000" />
-      <workItem from="1566796495583" duration="4547000" />
+      <workItem from="1566796495583" duration="6329000" />
+      <workItem from="1567401154874" duration="2662000" />
+      <workItem from="1567485083751" duration="649000" />
+      <workItem from="1567571647156" duration="727000" />
+      <workItem from="1567836063537" duration="862000" />
+      <workItem from="1567855239724" duration="597000" />
+      <workItem from="1567919387817" duration="1263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254069000" />
+    <option name="totallyTimeSpent" value="262611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09799789" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12118019" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -507,15 +512,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/sass/rtl/connection.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3432">
-          <caret line="143" column="9" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="9" />
+        <state relative-caret-position="2592">
+          <caret line="131" column="7" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
+          <folding>
+            <element signature="e#2450#3179#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sendemail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="264">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -535,8 +543,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-780">
-          <caret line="133" column="82" selection-start-line="133" selection-start-column="82" selection-end-line="133" selection-end-column="82" />
+        <state relative-caret-position="-3538">
+          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#0;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -565,7 +573,6 @@
             <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#section#0;n#div#1;n#section#0;n#section#1;n#div#0;n#div#0;n#div#0;n#div#2;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
