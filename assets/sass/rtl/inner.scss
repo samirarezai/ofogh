@@ -8,10 +8,10 @@
   text-align: center;
   padding: 5px;
   height: auto;
+  height: 100%;
   font-family:IRANSans,Shabnam;
   @include flex(column,nowrap,center,center);
-
-  @include media-max($S) {
+/*  @include media-max($S) {
     top: 35%;
     right: 0;
   }
@@ -19,16 +19,23 @@
     padding: 20px;
     width: 70%;
     height: 50%;
-  /*  background-color: rgba(255,255,255,.2);*/
+  !*  background-color: rgba(255,255,255,.2);*!
 
   }
 @include media-min($X){
   width: 50%;
   height: 30%;
   padding: 30px;
-/*  background-color: rgba(255,255,255,.2);*/
+!*  background-color: rgba(255,255,255,.2);*!
 
-}
+}*/
+  .image-header{
+    background-color: red;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
 .box-text{
   position:relative ;
 

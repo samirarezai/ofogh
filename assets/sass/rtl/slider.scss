@@ -4,12 +4,13 @@
 .slider {
   width: 100%;
 
-  background-color: $background-slider;
+  background-color:transparent;
   text-align: center;
   position: relative;
   overflow: hidden;
   padding: 50px 0 0;
-
+  min-height: $min-height-element;
+  @include flex(row,nowrap, center,center);
   .container {
     .head {
       .title {
@@ -35,7 +36,7 @@
     }
 
     .carousel {
-      height: 240px;
+      min-height: 240px;
 
       .carousel-indicators {
         left: 40px;
@@ -44,6 +45,8 @@
           background-color: #c1c1c1;
           border-radius: 50%;
           @include transition;
+          width: 10px;
+          height: 10px;
         }
 
         .active {
@@ -100,10 +103,9 @@
           left: -85px;
         }
         .carousel-control-prev-icon {
-          background-image: url("../img/left.svg");
-
           width: 30px;
           height: 30px;
+          @include transform(180deg);
         }
       }
       .carousel-control-next {
@@ -117,8 +119,7 @@
         }
 
         .carousel-control-next-icon {
-          background-image: url("../img/left.svg");
-          @include transform(180deg);
+
 
 
           width: 30px;
@@ -129,5 +130,11 @@
 
 
     }
+  }
+  .shape-right-slider{
+    position: absolute;
+    right:0;
+   top: 10%;
+    width: 12%;
   }
 }

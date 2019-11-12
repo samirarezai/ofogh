@@ -16,7 +16,7 @@
     @include transition;
     @include media-min($L) {
       @include flex(row-reverse, nowrap, center, space-between);
-      padding: 5px 125px;
+      padding: 0 125px;
     }
 
     .navigate {
@@ -136,6 +136,8 @@
         }
 
         .nav-link {
+          font-size: .9rem;
+          font-weight: 500;
           color: #fff;
           @include transition;
         }

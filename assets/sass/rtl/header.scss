@@ -11,7 +11,7 @@
   position: relative;
   z-index: 1060;
   @include flex(row, nowrap, center, center);
-  &:after {
+/*  &:after {
     content: "";
     display: block;
     position: absolute;
@@ -28,6 +28,17 @@
     @include media-min($L) {
       height: 150px;
 
+    }
+  }*/
+  .curve{
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    left: 0;
+    z-index: 1065;
+    width: 100%;
+    @include media-max(290px){
+      bottom: -7px;
     }
   }
   .over {
@@ -231,7 +242,7 @@
         }
         .navbar-brand {
           @include flex(row, nowrap, center, space-between);
-          padding: 3px 0;
+          padding:0px 0;
           img.logo {
             max-width: 150px;
             width: 100%;
@@ -261,6 +272,8 @@
             }
 
             .nav-link {
+              font-size: .9rem;
+              font-weight: 500;
               color: #000;
               @include transition;
               @include media-max($L){

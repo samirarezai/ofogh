@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "5bd59e9e-e3f8-44bf-bade-497bd8b0b18d",
+		"name": "panel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/phone/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:8000/l/hi?c=2323",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":\"00989124188571\",\n\t\"url\":\"https://www.ofoghplus.com/l/haminjoori/?c=tele\",\n\t\"os\":\"ANDROID\",\n\t\"deviceType\":\"samsong\",\n\t\"browser\":\"chrome\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/phone/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"phone",
+						""
+					]
+				},
+				"description": "شماره تلفن دریافت میکند \nبا فرمت \n{\n\t\"phoneNumber\": شماره تلفن\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/verify/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":\"00989124188571\",\n\t\"verifyCode\":\"0072\",\n\t\"channelName\":\"21\",\n\t\"channel\":\"11\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/verify/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"verify",
+						""
+					]
+				},
+				"description": "شماره تلفن و کد وریفیکشین را دریافت میکند\n{\n\t\"phoneNumber\": شماره تلفن, \n\t\"verify_code\": کد تاییدیه\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/token/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":\"00989197030096\",\n\t\"password\":\"1\"\n}"
+				},
+				"url": {
+					"raw": "{{urtl}}/api/token/",
+					"host": [
+						"{{urtl}}"
+					],
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				},
+				"description": "شماره تلفن و پسورد دریافت میکند و توکن تحویل میدهد\n{\n\t\"phoneNumber\": شماره تلفن\n\t\"password\": پبش فرض برای همه 1\n}\n\n\nتحویل می دهد\n{\n\taccess: توکن\n\trefresh: توکن\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/verifyuser/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":\"00989197030027\",\n\t\"isVerified\":true,\n\t\"channelName\":17,\n\t\"channel\":\"9\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/verifyuser/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"verifyuser",
+						""
+					]
+				},
+				"description": "شماره تلفن و اینکه کاربر تایید شده است یا نه\n{\n\tphoneNumber:\n\tis_verified: true of false\n}\n"
+			},
+			"response": []
+		},
+		{
+			"name": "cancel service",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phoneNumber\":\"00989124188571\"\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/phonecancel/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"phonecancel",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://ofoghplus.com/app/api/sendemail/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"test test\",\n\t\"subject\":\"test subject\",\n\t\"email\":\"ttest@ofogh.com\",\n\t\"text\":\"test text\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ofoghplus.com/app/api/sendemail/",
+					"protocol": "https",
+					"host": [
+						"ofoghplus",
+						"com"
+					],
+					"path": [
+						"app",
+						"api",
+						"sendemail",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
