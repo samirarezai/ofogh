@@ -18,7 +18,9 @@
       @include flex(row-reverse, nowrap, center, space-between);
       padding: 0 125px;
     }
-
+@include media-max($M){
+  padding: 0;
+}
     .navigate {
       width: 100%;
       @include flex(row, nowrap, center, space-between);

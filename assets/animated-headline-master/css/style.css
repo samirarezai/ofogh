@@ -239,10 +239,10 @@ xclip
   /* line */
   content: '';
   position: absolute;
-  top: 40px;
+  top: 0px;
   left: 0;
   width: 2px;
-  height: 50%;
+  height: 100%;
   background-color: #aebcb9;
   text-align: right;
 }
@@ -257,8 +257,8 @@ xclip
 
 @media only screen and (max-width: 1190px) {
   .cd-headline.clip .cd-words-wrapper::after {
-    top: 25px;
-    height: 55%;
+    top: 0px;
+    height: 100%;
   }
 }
 
@@ -267,25 +267,25 @@ xclip
     margin: 1rem auto;
   }
   .cd-words-wrapper b {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 @media only screen and (max-width: 768px) {
   .cd-headline.clip .cd-words-wrapper::after {
-    top: 3px;
-    height: 86%;
+    top: 0px;
+    height: 100%;
   }
   .cd-intro{
     margin: 1rem auto;
   }
   .cd-words-wrapper b {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 @media only screen and (max-width: 768px) {
   .cd-headline.clip .cd-words-wrapper::after {
-    top: 15px;
-    height: 58%;
+    top: 0px;
+    height: 100%;
   }
   .cd-intro{
     margin: .8rem auto;

@@ -1,7 +1,6 @@
 @import "../mixins";
 @import "../variable";
 .inner {
-  position: absolute;
   color: #fff;
   z-index: 1020;
   width: 100%;
@@ -10,30 +9,20 @@
   height: auto;
   height: 100%;
   font-family:IRANSans,Shabnam;
+  overflow: hidden;
   @include flex(column,nowrap,center,center);
-/*  @include media-max($S) {
-    top: 35%;
-    right: 0;
-  }
-  @include media-min($M){
-    padding: 20px;
-    width: 70%;
-    height: 50%;
-  !*  background-color: rgba(255,255,255,.2);*!
 
-  }
-@include media-min($X){
-  width: 50%;
-  height: 30%;
-  padding: 30px;
-!*  background-color: rgba(255,255,255,.2);*!
-
-}*/
   .image-header{
-    background-color: red;
+    background-color: transparent;
     img{
       width: 100%;
       height: auto;
+      @include media-max($M){
+        padding: 0% 15%;
+
+
+
+      }
     }
   }
 .box-text{
@@ -43,22 +32,26 @@
     font-family: Shabnam,IRANSans;
     padding: 0;
     margin: 0;
-    @include font-source-sans(3rem, #fff, 600, 3.1rem);
+    @include font-source-sans(2.2rem, $color-dark, 600, 2.1rem);
 
-@include animation(2.5s,2s);
+@include animation(.5s,1.5s);
+
     @include media-max($M){
-      @include font-source-sans(2.2rem, #fff, 500, 3rem);
+      @include font-source-sans(1.6rem, $color-dark, 600, 2rem);
+      margin-top: 20px;
     }
   }
   .cd-intro{
-    @include animation(3s,2.5s);
+font-family: aviny;
+    @include animation(.75s,1.5s);
+    margin: 8% 0;
   }
   .caption{
     margin-top:10px;
-    @include font-source-sans($small-font, #ffffffd9, 400,  1.5rem);
-    @include animation(4.25s,2.5s);
+    @include font-source-sans($small-font,$color-dark, 400,  1.5rem);
+    @include animation(1s,1.5s);
     @include media-max($M){
-      @include font-source-sans(.8rem, #fff, 300, 1rem);
+      @include font-source-sans(.88rem, $color-dark, 300, 1.5rem);
     }
   }
   &:after{
@@ -70,7 +63,7 @@
     bottom:-40px;
     right:calc(50% - 75px);
     opacity: 0;
-    @include animation(5.75s,2.5s);
+    @include animation(1s,.75s);
 @include keyframe;
   }
 }

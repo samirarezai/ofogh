@@ -9750,7 +9750,7 @@ textarea {
 .header .over {
   width: 100%;
   height: 100%;
-  background: rgba(103, 27, 94, 0.58);
+  background: #e2cadf;
   position: absolute;
   top: 0;
   right: 0;
@@ -9879,6 +9879,11 @@ textarea {
     justify-content: space-between;
     -ms-flex-pack: space-between;
     padding: 5px 125px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .navigation .navbar {
+    padding: 0 0;
   }
 }
 .header .navigation .navbar .navigate {
@@ -10178,6 +10183,11 @@ textarea {
     padding: 0 125px;
   }
 }
+@media screen and (max-width: 768px) {
+  .navigation-modal .navbar {
+    padding: 0;
+  }
+}
 .navigation-modal .navbar .navigate {
   width: 100%;
   display: -webkit-box;
@@ -10383,7 +10393,6 @@ textarea {
 }
 */
 .inner {
-  position: absolute;
   color: #fff;
   z-index: 1020;
   width: 100%;
@@ -10392,6 +10401,7 @@ textarea {
   height: auto;
   height: 100%;
   font-family: IRANSans, Shabnam;
+  overflow: hidden;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -10415,31 +10425,18 @@ textarea {
   -ms-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
-  /*  @include media-max($S) {
-      top: 35%;
-      right: 0;
-    }
-    @include media-min($M){
-      padding: 20px;
-      width: 70%;
-      height: 50%;
-    !*  background-color: rgba(255,255,255,.2);*!
-
-    }
-  @include media-min($X){
-    width: 50%;
-    height: 30%;
-    padding: 30px;
-  !*  background-color: rgba(255,255,255,.2);*!
-
-  }*/
 }
 .inner .image-header {
-  background-color: red;
+  background-color: transparent;
 }
 .inner .image-header img {
   width: 100%;
   height: auto;
+}
+@media screen and (max-width: 768px) {
+  .inner .image-header img {
+    padding: 0% 15%;
+  }
 }
 .inner .box-text {
   position: relative;
@@ -10448,94 +10445,97 @@ textarea {
   font-family: Shabnam, IRANSans;
   padding: 0;
   margin: 0;
-  font-size: 3rem;
-  color: #fff;
+  font-size: 2.2rem;
+  color: #3a3e3d;
   font-weight: 600;
-  line-height: 3.1rem;
-  -webkit-animation-delay: 2.5s;
-  -webkit-animation-duration: 2s;
+  line-height: 2.1rem;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-duration: 1.5s;
   /*-webkit-animation-name: $animation;*/
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-delay: 2.5s;
-  -moz-animation-duration: 2s;
+  -moz-animation-delay: 0.5s;
+  -moz-animation-duration: 1.5s;
   /*  -moz-animation-name: $animation;*/
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-delay: 2.5s;
-  -o-animation-duration: 2s;
+  -o-animation-delay: 0.5s;
+  -o-animation-duration: 1.5s;
   /* -o-animation-name: $animation;*/
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-delay: 2.5s;
-  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-duration: 1.5s;
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
 }
 @media screen and (max-width: 768px) {
   .inner .box-text .title {
-    font-size: 2.2rem;
-    color: #fff;
-    font-weight: 500;
-    line-height: 3rem;
+    font-size: 1.6rem;
+    color: #3a3e3d;
+    font-weight: 600;
+    line-height: 2rem;
+    margin-top: 20px;
   }
 }
 .inner .box-text .cd-intro {
-  -webkit-animation-delay: 3s;
-  -webkit-animation-duration: 2.5s;
+  font-family: aviny;
+  -webkit-animation-delay: 0.75s;
+  -webkit-animation-duration: 1.5s;
   /*-webkit-animation-name: $animation;*/
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-delay: 3s;
-  -moz-animation-duration: 2.5s;
+  -moz-animation-delay: 0.75s;
+  -moz-animation-duration: 1.5s;
   /*  -moz-animation-name: $animation;*/
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-delay: 3s;
-  -o-animation-duration: 2.5s;
+  -o-animation-delay: 0.75s;
+  -o-animation-duration: 1.5s;
   /* -o-animation-name: $animation;*/
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-delay: 3s;
-  animation-duration: 2.5s;
+  animation-delay: 0.75s;
+  animation-duration: 1.5s;
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
+  margin: 8% 0;
 }
 .inner .box-text .caption {
   margin-top: 10px;
   font-size: 1rem;
-  color: #ffffffd9;
+  color: #3a3e3d;
   font-weight: 400;
   line-height: 1.5rem;
-  -webkit-animation-delay: 4.25s;
-  -webkit-animation-duration: 2.5s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 1.5s;
   /*-webkit-animation-name: $animation;*/
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-delay: 4.25s;
-  -moz-animation-duration: 2.5s;
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 1.5s;
   /*  -moz-animation-name: $animation;*/
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-delay: 4.25s;
-  -o-animation-duration: 2.5s;
+  -o-animation-delay: 1s;
+  -o-animation-duration: 1.5s;
   /* -o-animation-name: $animation;*/
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-delay: 4.25s;
-  animation-duration: 2.5s;
+  animation-delay: 1s;
+  animation-duration: 1.5s;
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
 }
 @media screen and (max-width: 768px) {
   .inner .box-text .caption {
-    font-size: 0.8rem;
-    color: #fff;
+    font-size: 0.88rem;
+    color: #3a3e3d;
     font-weight: 300;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 }
 .inner .box-text:after {
@@ -10549,23 +10549,23 @@ textarea {
   bottom: -40px;
   right: calc(50% - 75px);
   opacity: 0;
-  -webkit-animation-delay: 5.75s;
-  -webkit-animation-duration: 2.5s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 0.75s;
   /*-webkit-animation-name: $animation;*/
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-delay: 5.75s;
-  -moz-animation-duration: 2.5s;
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 0.75s;
   /*  -moz-animation-name: $animation;*/
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-delay: 5.75s;
-  -o-animation-duration: 2.5s;
+  -o-animation-delay: 1s;
+  -o-animation-duration: 0.75s;
   /* -o-animation-name: $animation;*/
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-delay: 5.75s;
-  animation-duration: 2.5s;
+  animation-delay: 1s;
+  animation-duration: 0.75s;
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
@@ -10700,13 +10700,21 @@ textarea {
   border-radius: 10px;
 }
 .about .row .box-col .text .title {
-  font-family: Shabnam;
+  font-family: Shabnam, IRANSans;
   margin-bottom: 15px;
   font-size: 2rem;
   color: #631f5b;
   font-weight: 600;
   line-height: 2.1;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .about .row .box-col .text .title {
+    font-size: 1.5rem;
+    color: #631f5b;
+    font-weight: 600;
+    line-height: 2.1;
+  }
 }
 .about .row .box-col .text .caption {
   font-size: 1rem;
@@ -10758,6 +10766,10 @@ textarea {
     /*  animation-name: $animation;*/
     animation-fill-mode: both;
     /* this prevents the animation from restarting! */
+    font-size: 0.88rem;
+    color: #3a3e3d;
+    font-weight: 400;
+    line-height: 2.1rem;
   }
 }
 .about .row .image {
@@ -10766,6 +10778,12 @@ textarea {
 .about .row .image img {
   width: 100%;
   height: auto;
+  padding: 5% 7%;
+}
+@media screen and (max-width: 768px) {
+  .about .row .image img {
+    padding: 5% 20%;
+  }
 }
 
 .about.ok .text {
@@ -10784,22 +10802,22 @@ textarea {
   bottom: 0px;
   right: calc(50% - 42px);
   opacity: 0;
-  -webkit-animation-delay: 2.5s;
+  -webkit-animation-delay: 1s;
   -webkit-animation-duration: 0.5s;
   /*-webkit-animation-name: $animation;*/
   -webkit-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -moz-animation-delay: 2.5s;
+  -moz-animation-delay: 1s;
   -moz-animation-duration: 0.5s;
   /*  -moz-animation-name: $animation;*/
   -moz-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  -o-animation-delay: 2.5s;
+  -o-animation-delay: 1s;
   -o-animation-duration: 0.5s;
   /* -o-animation-name: $animation;*/
   -o-animation-fill-mode: both;
   /* this prevents the animation from restarting! */
-  animation-delay: 2.5s;
+  animation-delay: 1s;
   animation-duration: 0.5s;
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
@@ -10938,6 +10956,14 @@ textarea {
   font-weight: 600;
   line-height: 2.1;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .cards .cover .overlay .head .title {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 2.1;
+  }
 }
 .cards .cover .overlay .head .title:after {
   content: "";
@@ -11335,13 +11361,21 @@ textarea {
   -ms-flex-pack: center;
 }
 .slider .container .head .title {
-  font-family: Shabnam;
+  font-family: Shabnam, IRANSans;
   margin: 50px 0 15px;
   font-size: 2rem;
   color: #631f5b;
   font-weight: 600;
   line-height: 2.3;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .slider .container .head .title {
+    font-size: 1.5rem;
+    color: #631f5b;
+    font-weight: 600;
+    line-height: 2.3;
+  }
 }
 .slider .container .head .title:after {
   content: "";
@@ -11382,6 +11416,11 @@ textarea {
 }
 .slider .container .carousel .carousel-inner {
   padding: 5px;
+}
+@media screen and (max-width: 768px) {
+  .slider .container .carousel .carousel-inner {
+    padding: 0px;
+  }
 }
 .slider .container .carousel .carousel-inner .carousel-item {
   color: #444;
@@ -11428,7 +11467,7 @@ textarea {
   }
 }
 .slider .container .carousel .carousel-inner .carousel-item .row .box-col .question {
-  font-family: Shabnam;
+  font-family: IRANSans;
   margin-bottom: 10px;
   font-size: 1.1rem;
   color: #631f5b;
@@ -11480,6 +11519,14 @@ textarea {
   /*  animation-name: $animation;*/
   animation-fill-mode: both;
   /* this prevents the animation from restarting! */
+}
+@media screen and (max-width: 768px) {
+  .slider .container .carousel .carousel-inner .carousel-item .row .box-col .answer {
+    font-size: 0.88rem;
+    color: #3a3e3d;
+    font-weight: 500;
+    line-height: 1.7rem;
+  }
 }
 .slider .container .carousel .carousel-inner .carousel-item .row .box-col .answer.so {
   -webkit-animation-delay: 3s;
@@ -11642,6 +11689,14 @@ textarea {
   line-height: 2.1;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .connection .overlay .box-col .head .title {
+    font-size: 1.5rem;
+    color: #631f5b;
+    font-weight: 600;
+    line-height: 2.1;
+  }
+}
 .connection .overlay .box-col .head .title:after {
   content: "";
   width: 100px;
@@ -11797,10 +11852,10 @@ textarea {
 }
 .connection .overlay .btn {
   text-align: center;
-  background-color: #fcaf17;
-  color: #000;
+  background-color: #3a3e3d;
+  color: #fff;
   font-size: 0.9rem;
-  padding: 10px 30px;
+  padding: 10px 40px;
   display: flex;
   border-radius: 20px;
   margin: 10px auto;
@@ -12048,7 +12103,7 @@ textarea {
 }
 .all-modal .modal .modal-dialog .modal-content .modal-body .cards .pack .box-col .text .title {
   margin-top: 20px;
-  font-family: Shabnam;
+  font-family: IRANSans;
   margin-bottom: 10px;
   font-size: 2rem;
   color: #631f5b;

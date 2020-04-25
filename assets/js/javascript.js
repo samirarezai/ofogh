@@ -59,7 +59,7 @@ $(document).ready(function () {
         function about() {
             var $element = $('.about');
             var element_height = $element.outerHeight();
-            var element_top_position = $element.offset().top;
+            var element_top_position = $element.offset().top + 30;
             var element_bottom_position = (element_top_position + element_height);
 
             //check to see if this current container is within viewport

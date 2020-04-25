@@ -25,6 +25,9 @@
           margin: 50px 0;
           @include font-source-sans($big-font, #631f5b, 600, 2.1);
           position: relative;
+          @include media-max($M){
+            @include font-source-sans(1.5rem, #631f5b, 600, 2.1);
+          }
           &:after {
             content: '';
             width: 100px;
@@ -111,12 +114,11 @@
 
       .btn{
         text-align: center;
-        background-color:$color-yellow;
-
-        color: #000;
+        background-color:$color-dark;
+        color: #fff;
 
         font-size: .9rem;
-        padding: 10px 30px;
+        padding: 10px 40px;
         display:flex;
         border-radius: 20px;
         margin: 10px auto;

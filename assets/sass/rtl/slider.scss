@@ -14,12 +14,14 @@
   .container {
     .head {
       .title {
-        font-family: Shabnam;
+        font-family: Shabnam,IRANSans;
 
         margin: 50px 0 15px;
         @include font-source-sans($big-font, #631f5b, 600, 2.3);
         position: relative;
-
+@include media-max($M){
+  @include font-source-sans(1.5rem, #631f5b, 600, 2.3);
+}
         &:after {
 
           content: '';
@@ -58,7 +60,9 @@
 
       .carousel-inner {
         padding: 5px;
-
+@include media-max($M){
+  padding: 0px;
+}
         .carousel-item {
           color: #444;
 @include radius(10px);
@@ -76,7 +80,7 @@
 }
               @include radius(10px);
               .question {
-                font-family: Shabnam;
+                font-family:IRANSans;
                 margin-bottom: 10px;
                 @include font-source-sans(1.1rem, #631f5b, 600, 1.5rem);
                 @include animation(4s,.75s);
@@ -84,6 +88,9 @@
               .answer {
                 @include font-source-sans(1.1rem, #3a3e3d, 500, 1.7rem);
                 @include animation(.75s,1s);
+                @include media-max($M){
+                  @include font-source-sans(.88rem, #3a3e3d, 500, 1.7rem);
+                }
               }
               .answer.so{
                 @include animation(3s,.5s);

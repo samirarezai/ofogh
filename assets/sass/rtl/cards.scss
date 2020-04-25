@@ -47,7 +47,9 @@ padding-bottom: 350px;
   font-family: Shabnam;
   margin: 15px 0 50px;
   @include font-source-sans($big-font,#fff,600,2.1);
-
+  @include media-max($M){
+    @include font-source-sans(1.5rem,#fff,600,2.1);
+  }
   position: relative;
   &:after{
     content: '';

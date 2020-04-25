@@ -37,10 +37,13 @@ z-index: 12;
       @include media-min($M){
       }
       .title{
-font-family: Shabnam;
+font-family: Shabnam,IRANSans;
         margin-bottom: 15px;
         @include font-source-sans($big-font,#631f5b,600,2.1);
         position: relative;
+        @include media-max($M){
+          @include font-source-sans(1.5rem,#631f5b,600,2.1);
+        }
       }
       .caption{
         @include font-source-sans($small-font,#3a3e3d,400,2.1rem);
@@ -49,6 +52,7 @@ opacity: 0;
         @include animation(1.25s,1.25s);
         @include media-max($M){
           @include animation(1.25s,1.25s);
+          @include font-source-sans(.88rem,#3a3e3d,400,2.1rem);
         }
       }
     }
@@ -58,6 +62,10 @@ opacity: 0;
  img{
    width: 100%;
    height: auto;
+   padding: 5% 7%;
+   @include media-max($M){
+     padding: 5% 20%;
+   }
  }
   }
 }
@@ -75,7 +83,7 @@ opacity: 0;
         bottom:0px;
         right: calc(50% - 42px);
         opacity:0;
-        @include animation(2.5s,.5s);
+        @include animation(1s,.5s);
         @include keyframe;
         @include media-min($M){
           right:0;

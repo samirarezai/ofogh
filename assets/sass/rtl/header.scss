@@ -44,7 +44,7 @@
   .over {
     width: 100%;
     height: 100%;
-    background: rgba(103, 27, 94, 0.58);
+    background: #e2cadf;
     position: absolute;
     top:0;
     right: 0;
@@ -149,6 +149,9 @@
       @include media-min($L) {
         @include flex(row-reverse, nowrap, center, space-between);
         padding: 5px 125px;
+      }
+      @include media-max($M){
+        padding: 0 0;
       }
 
 
